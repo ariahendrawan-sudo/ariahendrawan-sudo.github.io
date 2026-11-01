@@ -8,7 +8,10 @@ GitHub Actions.
 
 | Berkas | Fungsi |
 |---|---|
-| `index.html` | Tampilan situs (satu halaman, responsif, mode terang/gelap). |
+| `template.html` | Sumber tampilan situs. **Edit file ini**, bukan `index.html`. |
+| `index.html` | Hasil pre-render otomatis (HTML statis untuk mesin pencari). Jangan diedit manual. |
+| `scripts/prerender.py` | Membuat `index.html` dan `sitemap.xml` dari `template.html` + `data.json`. |
+| `robots.txt`, `sitemap.xml` | Petunjuk untuk mesin pencari. |
 | `data.json` | Seluruh isi: metrik, publikasi, PkM, tautan profil. |
 | `scripts/update_data.py` | Menarik data dari OpenAlex, Crossref, dan SINTA, lalu menambahkan entri baru. |
 | `scripts/merge_sinta.py` | Menggabungkan hasil ekstraksi SINTA (JSON) ke `data.json`. |
@@ -47,3 +50,12 @@ GitHub Actions.
 - SINTA dibaca dari profil publik (10 entri terbaru per tab tanpa login). Entri lama di luar
   10 terbaru sudah tersimpan di `data.json` dan tidak akan hilang.
 - Judul yang tidak ingin ditampilkan dimasukkan ke daftar `exclude` di `data.json`.
+
+## SEO dan Google Search Console
+
+1. Buka https://search.google.com/search-console → **Add property → URL prefix** →
+   `https://ariahendrawan-sudo.github.io/`.
+2. Pilih metode **HTML tag**, salin nilai `content="..."` saja.
+3. Isi nilai itu ke `"gsc_verification"` di `data.json` (edit di GitHub, lalu Commit).
+   Situs ter-deploy ulang dengan meta verifikasi; kembali ke Search Console dan klik **Verify**.
+4. Menu **Sitemaps** → kirim `sitemap.xml`. Menu **URL Inspection** → **Request Indexing**.
