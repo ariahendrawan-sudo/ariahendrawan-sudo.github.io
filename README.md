@@ -11,6 +11,8 @@ GitHub Actions.
 | `index.html` | Tampilan situs (satu halaman, responsif, mode terang/gelap). |
 | `data.json` | Seluruh isi: metrik, publikasi, PkM, tautan profil. |
 | `scripts/update_data.py` | Menarik data dari OpenAlex, Crossref, dan SINTA, lalu menambahkan entri baru. |
+| `scripts/merge_sinta.py` | Menggabungkan hasil ekstraksi SINTA (JSON) ke `data.json`. |
+| `status.json` | Laporan tiap pembaruan: jumlah data per sumber dan peringatan. |
 | `scripts/sinta.py` | Pembaca profil publik SINTA (skor, metrik, hibah, PkM, HKI, buku, Scopus). |
 | `.github/workflows/update-and-deploy.yml` | Jadwal mingguan, pembaruan data, dan deploy ke Pages. |
 
@@ -38,6 +40,10 @@ GitHub Actions.
 
 - Metrik (karya, sitasi, h-index, i10) bersumber dari OpenAlex dan dapat berbeda dari Scopus.
   Metrik Scopus resmi memerlukan Elsevier API key (umumnya melalui langganan institusi).
+- SINTA menolak akses dari server GitHub (HTTP 403), sehingga data SINTA diperbarui oleh
+  tugas terjadwal Claude setiap Senin yang membaca profil SINTA lalu menjalankan
+  `scripts/merge_sinta.py`. Bila SINTA kelak membuka akses, `scripts/sinta.py` di workflow
+  GitHub akan otomatis ikut bekerja.
 - SINTA dibaca dari profil publik (10 entri terbaru per tab tanpa login). Entri lama di luar
   10 terbaru sudah tersimpan di `data.json` dan tidak akan hilang.
 - Judul yang tidak ingin ditampilkan dimasukkan ke daftar `exclude` di `data.json`.

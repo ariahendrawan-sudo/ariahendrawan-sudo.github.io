@@ -195,6 +195,68 @@ def crossref_works():
     return out
 
 
+def apply_sinta(data, s, report):
+    """Gabungkan hasil SINTA (format sinta.fetch) ke data. Hanya menambah; mengembalikan True bila berubah."""
+    changed = False
+    pubs = data["pubs"]
+    excluded = {norm_title(t) for t in data.get("exclude", [])}
+    prof = s.get("profile") or {}
+    cur = data["sinta"]
+    for k in ("score", "score3", "affil_score", "table"):
+        if prof.get(k) and prof[k] != cur.get(k):
+            report.append(f"SINTA {k}: {cur.get(k)} -> {prof[k]}")
+            cur[k] = prof[k]
+            changed = True
+    for key in ("grants", "services", "iprs", "books"):
+        coll = data.setdefault(key, [])
+        pool = {norm_title(x["t"]) for x in coll}
+        for item in s.get(key, []):
+            if similar(item["t"], pool):
+                continue
+            coll.append(item)
+            pool.add(norm_title(item["t"]))
+            report.append(f"+ SINTA {key} [{item['y']}] {item['t']}")
+            changed = True
+    pool = {norm_title(p["t"]) for p in pubs}
+    for sc in s.get("scopus", []):
+        if similar(sc["t"], excluded):
+            continue
+        if similar(sc["t"], pool):
+            # tandai entri yang ada sebagai Scopus
+            nt = norm_title(sc["t"])
+            for p in pubs:
+                pt = norm_title(p["t"])
+                if pt == nt or difflib.SequenceMatcher(None, pt, nt).ratio() >= 0.88:
+                    upd = {"scopus": 1}
+                    if sc.get("q") and not p.get("q"):
+                        upd["q"] = sc["q"]
+                    if sc.get("link") and not p.get("sc"):
+                        upd["sc"] = sc["link"]
+                    if sc["n"] > (p.get("n") or 0):
+                        upd["n"] = sc["n"]
+                    if any(p.get(k) != v for k, v in upd.items()):
+                        p.update(upd)
+                        changed = True
+                    break
+            continue
+        c = classify(sc["t"], sc["v"])
+        if c == "pkm":
+            c = "ml"
+        entry = {"y": sc["y"], "t": sc["t"], "v": sc["v"], "k": sc["kind"], "c": c, "a": "",
+                 "n": sc["n"], "scopus": 1, "src": "sinta"}
+        if sc.get("q"):
+            entry["q"] = sc["q"]
+        if sc.get("link"):
+            entry["url"] = entry["sc"] = sc["link"]
+        if is_english(sc["t"]):
+            entry["en"] = 1
+        pubs.append(entry)
+        pool.add(norm_title(sc["t"]))
+        report.append(f"+ Scopus [{sc['y']}] {sc['t']}")
+        changed = True
+    return changed
+
+
 def main():
     data = json.loads(DATA.read_text(encoding="utf-8"))
     pubs = data["pubs"]
@@ -287,59 +349,7 @@ def main():
                                          "errors": s.get("errors", [])}
             for e in s.get("errors", []):
                 failures.append(f"SINTA {e}")
-            prof = s.get("profile") or {}
-            cur = data["sinta"]
-            for k in ("score", "score3", "affil_score", "table"):
-                if prof.get(k) and prof[k] != cur.get(k):
-                    report.append(f"SINTA {k}: {cur.get(k)} -> {prof[k]}")
-                    cur[k] = prof[k]
-                    changed = True
-            for key in ("grants", "services", "iprs", "books"):
-                coll = data.setdefault(key, [])
-                pool = {norm_title(x["t"]) for x in coll}
-                for item in s.get(key, []):
-                    if similar(item["t"], pool):
-                        continue
-                    coll.append(item)
-                    pool.add(norm_title(item["t"]))
-                    report.append(f"+ SINTA {key} [{item['y']}] {item['t']}")
-                    changed = True
-            pool = {norm_title(p["t"]) for p in pubs}
-            for sc in s.get("scopus", []):
-                if similar(sc["t"], excluded):
-                    continue
-                if similar(sc["t"], pool):
-                    # tandai entri yang ada sebagai Scopus
-                    nt = norm_title(sc["t"])
-                    for p in pubs:
-                        pt = norm_title(p["t"])
-                        if pt == nt or difflib.SequenceMatcher(None, pt, nt).ratio() >= 0.88:
-                            upd = {"scopus": 1}
-                            if sc.get("q") and not p.get("q"):
-                                upd["q"] = sc["q"]
-                            if sc.get("link") and not p.get("sc"):
-                                upd["sc"] = sc["link"]
-                            if sc["n"] > (p.get("n") or 0):
-                                upd["n"] = sc["n"]
-                            if any(p.get(k) != v for k, v in upd.items()):
-                                p.update(upd)
-                                changed = True
-                            break
-                    continue
-                c = classify(sc["t"], sc["v"])
-                if c == "pkm":
-                    c = "ml"
-                entry = {"y": sc["y"], "t": sc["t"], "v": sc["v"], "k": sc["kind"], "c": c, "a": "",
-                         "n": sc["n"], "scopus": 1, "src": "sinta"}
-                if sc.get("q"):
-                    entry["q"] = sc["q"]
-                if sc.get("link"):
-                    entry["url"] = entry["sc"] = sc["link"]
-                if is_english(sc["t"]):
-                    entry["en"] = 1
-                pubs.append(entry)
-                pool.add(norm_title(sc["t"]))
-                report.append(f"+ Scopus [{sc['y']}] {sc['t']}")
+            if apply_sinta(data, s, report):
                 changed = True
         except Exception as e:  # noqa: BLE001
             failures.append(f"SINTA: {e}")
