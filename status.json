@@ -1,0 +1,32 @@
+{
+ "sources": {
+  "OpenAlex works": 62,
+  "Crossref": 12,
+  "sinta": {
+   "profile_fields": [],
+   "grants": 0,
+   "services": 0,
+   "iprs": 0,
+   "books": 0,
+   "scopus": 0,
+   "errors": [
+    "profil: HTTP Error 403: Forbidden",
+    "researches: HTTP Error 403: Forbidden",
+    "services: HTTP Error 403: Forbidden",
+    "iprs: HTTP Error 403: Forbidden",
+    "books: HTTP Error 403: Forbidden",
+    "scopus: HTTP Error 403: Forbidden"
+   ]
+  }
+ },
+ "run": "2026-11-01T18:12+07:00",
+ "changes": [],
+ "warnings": [
+  "SINTA profil: HTTP Error 403: Forbidden",
+  "SINTA researches: HTTP Error 403: Forbidden",
+  "SINTA services: HTTP Error 403: Forbidden",
+  "SINTA iprs: HTTP Error 403: Forbidden",
+  "SINTA books: HTTP Error 403: Forbidden",
+  "SINTA scopus: HTTP Error 403: Forbidden"
+ ]
+}
