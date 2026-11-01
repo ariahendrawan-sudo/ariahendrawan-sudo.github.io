@@ -16,11 +16,11 @@ GitHub Actions.
 ## Pemasangan (sekali saja)
 
 1. Buat repositori **publik** bernama persis `<username>.github.io`
-   (contoh: `ariahendrawan.github.io` bila username/organisasinya `ariahendrawan`).
+   (untuk situs ini: `ariahendrawan-sudo.github.io` di akun `ariahendrawan-sudo`).
 2. Unggah seluruh isi folder ini ke branch `main`.
 3. Buka **Settings → Pages → Build and deployment → Source**, pilih **GitHub Actions**.
 4. Buka tab **Actions**, pilih *Update data & deploy site*, klik **Run workflow**.
-5. Setelah selesai (±1 menit), situs aktif di `https://<username>.github.io`.
+5. Setelah selesai (±1 menit), situs aktif di `https://ariahendrawan-sudo.github.io`.
 
 ## Pemeliharaan
 
