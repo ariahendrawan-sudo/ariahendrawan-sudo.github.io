@@ -36,10 +36,11 @@ jobs:
       - name: Simpan perubahan data.json
         if: "!contains(github.event.head_commit.message, 'data: pembaruan otomatis')"
         run: |
-          if ! git diff --quiet -- data.json; then
+          git add -N status.json 2>/dev/null || true
+          if ! git diff --quiet -- data.json status.json; then
             git config user.name "site-updater[bot]"
             git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-            git add data.json
+            git add data.json status.json
             git commit -m "data: pembaruan otomatis $(date -u +%Y-%m-%d)"
             git push
           else
