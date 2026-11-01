@@ -16,6 +16,7 @@ Aturan penggabungan:
 
 Hanya memakai pustaka standar Python 3.9+.
 """
+import difflib
 import json
 import re
 import sys
@@ -74,6 +75,16 @@ def get_json(url, tries=3):
 def norm_title(t):
     t = re.sub(r"<[^>]+>", " ", t or "").lower()
     return re.sub(r"[^a-z0-9]+", "", t)
+
+
+def similar(t, pool, thr=0.88):
+    """Cari judul yang mirip (toleran terhadap salah ketik/kapitalisasi) di pool judul ternormalisasi."""
+    n = norm_title(t)
+    if not n:
+        return False
+    if n in pool:
+        return True
+    return any(difflib.SequenceMatcher(None, n, p).ratio() >= thr for p in pool)
 
 
 def norm_doi(d):
@@ -216,11 +227,20 @@ def main():
         except Exception as e:  # noqa: BLE001
             failures.append(f"{name}: {e}")
 
+    excluded = {norm_title(t) for t in data.get("exclude", [])}
     for w in candidates:
         if not w["t"] or not w["y"]:
             continue
+        if similar(w["t"], excluded):
+            continue
         existing = by_doi.get(w["doi"]) if w["doi"] else None
         existing = existing or by_title.get(norm_title(w["t"]))
+        if not existing:
+            nt = norm_title(w["t"])
+            for k, p in by_title.items():
+                if difflib.SequenceMatcher(None, nt, k).ratio() >= 0.9:
+                    existing = p
+                    break
         if existing:
             if (w["n"] or 0) > (existing.get("n") or 0):
                 existing["n"] = w["n"]
@@ -242,7 +262,74 @@ def main():
         report.append(f"+ [{entry['y']}] {entry['t']} ({entry['k']}/{entry['c']})")
         changed = True
 
+    # 3) SINTA: skor, metrik Scopus/GS/WoS, hibah, PkM, HKI, buku, dokumen Scopus
+    sinta_id = (data.get("sinta") or {}).get("id")
+    if sinta_id:
+        try:
+            import sinta  # noqa: PLC0415
+            s = sinta.fetch(sinta_id)
+            for e in s.get("errors", []):
+                failures.append(f"SINTA {e}")
+            prof = s.get("profile") or {}
+            cur = data["sinta"]
+            for k in ("score", "score3", "affil_score", "table"):
+                if prof.get(k) and prof[k] != cur.get(k):
+                    report.append(f"SINTA {k}: {cur.get(k)} -> {prof[k]}")
+                    cur[k] = prof[k]
+                    changed = True
+            for key in ("grants", "services", "iprs", "books"):
+                coll = data.setdefault(key, [])
+                pool = {norm_title(x["t"]) for x in coll}
+                for item in s.get(key, []):
+                    if similar(item["t"], pool):
+                        continue
+                    coll.append(item)
+                    pool.add(norm_title(item["t"]))
+                    report.append(f"+ SINTA {key} [{item['y']}] {item['t']}")
+                    changed = True
+            pool = {norm_title(p["t"]) for p in pubs}
+            for sc in s.get("scopus", []):
+                if similar(sc["t"], excluded):
+                    continue
+                if similar(sc["t"], pool):
+                    # tandai entri yang ada sebagai Scopus
+                    nt = norm_title(sc["t"])
+                    for p in pubs:
+                        pt = norm_title(p["t"])
+                        if pt == nt or difflib.SequenceMatcher(None, pt, nt).ratio() >= 0.88:
+                            upd = {"scopus": 1}
+                            if sc.get("q") and not p.get("q"):
+                                upd["q"] = sc["q"]
+                            if sc.get("link") and not p.get("sc"):
+                                upd["sc"] = sc["link"]
+                            if sc["n"] > (p.get("n") or 0):
+                                upd["n"] = sc["n"]
+                            if any(p.get(k) != v for k, v in upd.items()):
+                                p.update(upd)
+                                changed = True
+                            break
+                    continue
+                c = classify(sc["t"], sc["v"])
+                if c == "pkm":
+                    c = "ml"
+                entry = {"y": sc["y"], "t": sc["t"], "v": sc["v"], "k": sc["kind"], "c": c, "a": "",
+                         "n": sc["n"], "scopus": 1, "src": "sinta"}
+                if sc.get("q"):
+                    entry["q"] = sc["q"]
+                if sc.get("link"):
+                    entry["url"] = entry["sc"] = sc["link"]
+                if is_english(sc["t"]):
+                    entry["en"] = 1
+                pubs.append(entry)
+                pool.add(norm_title(sc["t"]))
+                report.append(f"+ Scopus [{sc['y']}] {sc['t']}")
+                changed = True
+        except Exception as e:  # noqa: BLE001
+            failures.append(f"SINTA: {e}")
+
     if changed:
+        for key in ("grants", "services", "iprs", "books"):
+            data.get(key, []).sort(key=lambda x: (-x["y"], x["t"]))
         pubs.sort(key=lambda p: (-p["y"], p["t"]))
         wib = timezone(timedelta(hours=7))
         data["updated"] = datetime.now(wib).strftime("%Y-%m-%d")
@@ -251,9 +338,9 @@ def main():
     print("\n".join(report) if report else "Tidak ada karya atau metrik baru.")
     for f in failures:
         print("PERINGATAN:", f, file=sys.stderr)
-    # gagal total hanya bila semua sumber gagal
-    if len(failures) >= 3:
-        sys.exit(1)
+    # Tidak pernah menggagalkan job: situs tetap ter-deploy dengan data terakhir yang valid.
+    if failures:
+        print(f"{len(failures)} sumber gagal dibaca; data lama dipertahankan.", file=sys.stderr)
 
 
 if __name__ == "__main__":

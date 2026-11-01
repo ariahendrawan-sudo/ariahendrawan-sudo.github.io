@@ -29,12 +29,12 @@ jobs:
         with:
           python-version: "3.12"
 
-      - name: Tarik data terbaru (OpenAlex, Crossref)
-        if: github.event_name != 'push'
+      - name: Tarik data terbaru (OpenAlex, Crossref, SINTA)
+        if: "!contains(github.event.head_commit.message, 'data: pembaruan otomatis')"
         run: python scripts/update_data.py
 
       - name: Simpan perubahan data.json
-        if: github.event_name != 'push'
+        if: "!contains(github.event.head_commit.message, 'data: pembaruan otomatis')"
         run: |
           if ! git diff --quiet -- data.json; then
             git config user.name "site-updater[bot]"

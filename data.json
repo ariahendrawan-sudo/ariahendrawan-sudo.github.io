@@ -71,6 +71,11 @@
  ],
  "profiles": [
   {
+   "label": "SINTA",
+   "id": "5972607",
+   "url": "https://sinta.kemdiktisaintek.go.id/authors/profile/5972607"
+  },
+  {
    "label": "Scopus",
    "id": "57200985617",
    "url": "https://www.scopus.com/authid/detail.uri?authorId=57200985617"
@@ -94,81 +99,14 @@
  "pubs": [
   {
    "y": 2026,
-   "t": "Penerapan Teknologi Robotic Ship Fishery untuk Pemberdayaan Nelayan Desa Surodadi Kabupaten Demak",
-   "v": "Jurnal Surya Masyarakat 8(2)",
-   "k": "pkm",
-   "c": "pkm",
-   "a": "Supari, Purwanto",
-   "doi": "10.26714/jsm.8.2.2026.251-258",
-   "n": 0,
-   "src": "curated"
-  },
-  {
-   "y": 2026,
-   "t": "Peningkatan Kapasitas Digital Penjahit UMKM Melalui Aplikasi Pemesanan Mobile SIJAH di Kota Semarang",
-   "v": "Jurnal DIMASTIK 4(2)",
-   "k": "pkm",
-   "c": "pkm",
-   "a": "Atmoko Nugroho, Astrid Novita Putri, Saifur Rohman Cholil",
-   "doi": "10.26623/dimastik.v4i2.15794",
-   "n": 0,
-   "src": "curated"
-  },
-  {
-   "y": 2026,
-   "t": "Data-Driven Traffic for Infrastructure Planning: An LSTM Approach Using Indonesian Road-Vehicle Trends",
-   "v": "Journal of Information Systems and Informatics 8(2)",
+   "t": "A Knowledge Management Integration Model within Enterprise Architecture to Improve the Competitiveness of Higher Education Institutions",
+   "v": "JINAV: Journal of Information and Visualization 7(2)",
    "k": "jurnal",
-   "c": "its",
-   "a": "Nabilah Putri",
-   "doi": "10.63158/journalisi.v8i2.1516",
+   "c": "sis",
+   "a": "Vensy Vydia, Rahmat Gernowo",
+   "doi": "10.35877/454ri.jinav4955",
    "n": 0,
    "en": 1,
-   "src": "curated"
-  },
-  {
-   "y": 2026,
-   "t": "Pemodelan Urutan Jangka Pendek vs Jangka Panjang: LSTM vs TSFormer dalam Prediksi Lalu Lintas Perkotaan",
-   "v": "Jurnal Informatika Teknologi dan Sains (Jinteks) 8(1)",
-   "k": "jurnal",
-   "c": "its",
-   "a": "Jovita Wayan Ramadhani",
-   "doi": "10.51401/jinteks.v8i1.6996",
-   "n": 0,
-   "src": "curated"
-  },
-  {
-   "y": 2026,
-   "t": "Analysis of the Best Social Media Platforms for Promotion Using Machine Learning and RFE Feature Selection: A Comparative Study of Gradient Boosting, XGBoost, CNN, and SVR",
-   "v": "Journal of Applied Informatics and Computing 10(1)",
-   "k": "jurnal",
-   "c": "ml",
-   "a": "Maulina Putri",
-   "doi": "10.30871/jaic.v10i1.12049",
-   "n": 0,
-   "en": 1,
-   "src": "curated"
-  },
-  {
-   "y": 2026,
-   "t": "Pengembangan Early Warning System Harga Pangan Strategis Berbasis Integrasi Fitur Meteorologi Menggunakan Perbandingan SVR dan XGBoost",
-   "v": "JIPI (Jurnal Ilmiah Penelitian dan Pembelajaran Informatika) 11(2)",
-   "k": "jurnal",
-   "c": "ml",
-   "a": "Jihan Kusumawardhani",
-   "doi": "10.29100/jipi.v11i2.10168",
-   "n": 0,
-   "src": "curated"
-  },
-  {
-   "y": 2026,
-   "t": "Deteksi Gangguan Tidur Menggunakan Support Vector Machine pada Aplikasi Web Streamlit",
-   "v": "JOINS (Journal of Information System) 11(1)",
-   "k": "jurnal",
-   "c": "ml",
-   "a": "Satria Dava Riansa",
-   "doi": "10.33633/joins.v11i1.16125",
-   "n": 0,
    "src": "curated"
   },
   {
@@ -195,14 +133,81 @@
   },
   {
    "y": 2026,
-   "t": "A Knowledge Management Integration Model within Enterprise Architecture to Improve the Competitiveness of Higher Education Institutions",
-   "v": "JINAV: Journal of Information and Visualization",
+   "t": "Analysis of the Best Social Media Platforms for Promotion Using Machine Learning and RFE Feature Selection: A Comparative Study of Gradient Boosting, XGBoost, CNN, and SVR",
+   "v": "Journal of Applied Informatics and Computing 10(1)",
    "k": "jurnal",
-   "c": "sis",
-   "a": "",
-   "doi": "10.35877/454ri.jinav4955",
+   "c": "ml",
+   "a": "Maulina Putri",
+   "doi": "10.30871/jaic.v10i1.12049",
+   "n": 2,
+   "en": 1,
+   "src": "curated"
+  },
+  {
+   "y": 2026,
+   "t": "Data-Driven Traffic for Infrastructure Planning: An LSTM Approach Using Indonesian Road-Vehicle Trends",
+   "v": "Journal of Information Systems and Informatics 8(2)",
+   "k": "jurnal",
+   "c": "its",
+   "a": "Nabilah Putri",
+   "doi": "10.63158/journalisi.v8i2.1516",
    "n": 0,
    "en": 1,
+   "src": "curated"
+  },
+  {
+   "y": 2026,
+   "t": "Deteksi Gangguan Tidur Menggunakan Support Vector Machine pada Aplikasi Web Streamlit",
+   "v": "JOINS (Journal of Information System) 11(1)",
+   "k": "jurnal",
+   "c": "ml",
+   "a": "Satria Dava Riansa",
+   "doi": "10.33633/joins.v11i1.16125",
+   "n": 0,
+   "src": "curated"
+  },
+  {
+   "y": 2026,
+   "t": "Pemodelan Urutan Jangka Pendek vs Jangka Panjang: LSTM vs TSFormer dalam Prediksi Lalu Lintas Perkotaan",
+   "v": "Jurnal Informatika Teknologi dan Sains (Jinteks) 8(1)",
+   "k": "jurnal",
+   "c": "its",
+   "a": "Jovita Wayan Ramadhani",
+   "doi": "10.51401/jinteks.v8i1.6996",
+   "n": 1,
+   "src": "curated"
+  },
+  {
+   "y": 2026,
+   "t": "Penerapan Teknologi Robotic Ship Fishery untuk Pemberdayaan Nelayan Desa Surodadi Kabupaten Demak",
+   "v": "Jurnal Surya Masyarakat 8(2)",
+   "k": "pkm",
+   "c": "pkm",
+   "a": "Supari, Purwanto",
+   "doi": "10.26714/jsm.8.2.2026.251-258",
+   "n": 0,
+   "src": "curated"
+  },
+  {
+   "y": 2026,
+   "t": "Pengembangan Early Warning System Harga Pangan Strategis Berbasis Integrasi Fitur Meteorologi Menggunakan Perbandingan SVR dan XGBoost",
+   "v": "JIPI (Jurnal Ilmiah Penelitian dan Pembelajaran Informatika) 11(2)",
+   "k": "jurnal",
+   "c": "ml",
+   "a": "Jihan Kusumawardhani",
+   "doi": "10.29100/jipi.v11i2.10168",
+   "n": 0,
+   "src": "curated"
+  },
+  {
+   "y": 2026,
+   "t": "Peningkatan Kapasitas Digital Penjahit UMKM Melalui Aplikasi Pemesanan Mobile SIJAH di Kota Semarang",
+   "v": "Jurnal DIMASTIK 4(2)",
+   "k": "pkm",
+   "c": "pkm",
+   "a": "Atmoko Nugroho, Astrid Novita Putri, Saifur Rohman Cholil",
+   "doi": "10.26623/dimastik.v4i2.15794",
+   "n": 0,
    "src": "curated"
   },
   {
@@ -213,42 +218,6 @@
    "c": "sis",
    "a": "April Firman Daru, Toti Kresna Wardana",
    "doi": "10.69533/informatech.volume3number1.492",
-   "n": 0,
-   "en": 1,
-   "src": "curated"
-  },
-  {
-   "y": 2025,
-   "t": "Hybrid Deep Learning for Spatiotemporal Traffic Forecasting: Integrating LSTM, Transformer, and Graph Convolutional Networks on the METR-LA Dataset",
-   "v": "International Journal of Data Science 6(2)",
-   "k": "jurnal",
-   "c": "its",
-   "a": "",
-   "doi": "10.18517/ijods.6.2.103-112.2025",
-   "n": 2,
-   "en": 1,
-   "src": "curated"
-  },
-  {
-   "y": 2025,
-   "t": "LSTM Forecasting and K-Means Clustering for Passenger Mobility Management at Bus Terminals",
-   "v": "Journal of Information Systems and Informatics 7(3)",
-   "k": "jurnal",
-   "c": "its",
-   "a": "Hasna Rizqia Khairunnisa",
-   "doi": "10.51519/journalisi.v7i3.1159",
-   "n": 1,
-   "en": 1,
-   "src": "curated"
-  },
-  {
-   "y": 2025,
-   "t": "Vehicle Detection and Tracking using Coarse-to-Fine Module and Spatial Pyramid Pooling–Fast with DeepSORT",
-   "v": "Signal and Image Processing Letters 7(2)",
-   "k": "jurnal",
-   "c": "cv",
-   "a": "Anita Nur Widdia Saputri, Rofiatul Khoiriyah",
-   "doi": "10.31763/simple.v7i2.118",
    "n": 0,
    "en": 1,
    "src": "curated"
@@ -267,24 +236,23 @@
   },
   {
    "y": 2025,
+   "t": "Analisis Sentimen terhadap Komentar YouTube Terkait Judi Online Menggunakan Metode Convolutional Neural Network (CNN)",
+   "v": "Djtechno: Jurnal Teknologi Informasi 6(3)",
+   "k": "jurnal",
+   "c": "nlp",
+   "a": "Abhinaya Putra",
+   "doi": "10.46576/djtechno.v6i3.8085",
+   "n": 0,
+   "src": "curated"
+  },
+  {
+   "y": 2025,
    "t": "Artificial Neural Network for Corn Quality Classification Based on Seed Damage and Aflatoxin Attributes",
    "v": "Signal and Image Processing Letters 7(1)",
    "k": "jurnal",
    "c": "ml",
    "a": "Innayah Maulida, Rofiatul Khoiriyah",
    "doi": "10.31763/simple.v7i1.119",
-   "n": 0,
-   "en": 1,
-   "src": "curated"
-  },
-  {
-   "y": 2025,
-   "t": "Speech-Driven Visitor Notification System Using Telegram Bot and Voice Activity Detection for Real-Time Retail Applications",
-   "v": "International Journal of Artificial Intelligence and Science 2(2)",
-   "k": "jurnal",
-   "c": "iot",
-   "a": "Aria Setiaji, B. Very Christioko, Lenny Margaretta Huizen",
-   "doi": "10.63158/ijais.v2i2.44",
    "n": 0,
    "en": 1,
    "src": "curated"
@@ -303,13 +271,14 @@
   },
   {
    "y": 2025,
-   "t": "Analisis Sentimen terhadap Komentar YouTube Terkait Judi Online Menggunakan Metode Convolutional Neural Network (CNN)",
-   "v": "Djtechno: Jurnal Teknologi Informasi 6(3)",
+   "t": "Hybrid Deep Learning for Spatiotemporal Traffic Forecasting: Integrating LSTM, Transformer, and Graph Convolutional Networks on the METR-LA Dataset",
+   "v": "International Journal of Data Science 6(2)",
    "k": "jurnal",
-   "c": "nlp",
-   "a": "Abhinaya Putra",
-   "doi": "10.46576/djtechno.v6i3.8085",
-   "n": 0,
+   "c": "its",
+   "a": "",
+   "doi": "10.18517/ijods.6.2.103-112.2025",
+   "n": 2,
+   "en": 1,
    "src": "curated"
   },
   {
@@ -325,13 +294,14 @@
   },
   {
    "y": 2025,
-   "t": "Strategi Digital Marketing untuk UMKM: Membangun Branding Online dan Konten Menarik UMKM RW 15 Tanjung Mas Semarang Utara",
-   "v": "Jurnal DIMASTIK 3(2)",
-   "k": "pkm",
-   "c": "pkm",
-   "a": "Vensy Vydia, Lenny Margaretta Huizen, Saifur Rohman Cholil",
-   "doi": "10.26623/dimastik.v3i2.12640",
-   "n": 0,
+   "t": "LSTM Forecasting and K-Means Clustering for Passenger Mobility Management at Bus Terminals",
+   "v": "Journal of Information Systems and Informatics 7(3)",
+   "k": "jurnal",
+   "c": "its",
+   "a": "Hasna Rizqia Khairunnisa",
+   "doi": "10.51519/journalisi.v7i3.1159",
+   "n": 1,
+   "en": 1,
    "src": "curated"
   },
   {
@@ -346,6 +316,56 @@
    "src": "curated"
   },
   {
+   "y": 2025,
+   "t": "Speech-Driven Visitor Notification System Using Telegram Bot and Voice Activity Detection for Real-Time Retail Applications",
+   "v": "International Journal of Artificial Intelligence and Science 2(2)",
+   "k": "jurnal",
+   "c": "iot",
+   "a": "Aria Setiaji, B. Very Christioko, Lenny Margaretta Huizen",
+   "doi": "10.63158/ijais.v2i2.44",
+   "n": 0,
+   "en": 1,
+   "src": "curated"
+  },
+  {
+   "y": 2025,
+   "t": "Strategi Digital Marketing untuk UMKM: Membangun Branding Online dan Konten Menarik UMKM RW 15 Tanjung Mas Semarang Utara",
+   "v": "Jurnal DIMASTIK 3(2)",
+   "k": "pkm",
+   "c": "pkm",
+   "a": "Vensy Vydia, Lenny Margaretta Huizen, Saifur Rohman Cholil",
+   "doi": "10.26623/dimastik.v3i2.12640",
+   "n": 0,
+   "src": "curated"
+  },
+  {
+   "y": 2025,
+   "t": "Vehicle Detection and Tracking using Coarse-to-Fine Module and Spatial Pyramid Pooling–Fast with DeepSORT",
+   "v": "Signal and Image Processing Letters 7(2)",
+   "k": "jurnal",
+   "c": "cv",
+   "a": "Anita Nur Widdia Saputri, Rofiatul Khoiriyah",
+   "doi": "10.31763/simple.v7i2.118",
+   "n": 0,
+   "en": 1,
+   "src": "curated"
+  },
+  {
+   "y": 2024,
+   "t": "A Novel YOLO-ARIA Approach for Real-Time Vehicle Detection and Classification in Urban Traffic",
+   "v": "International Journal of Intelligent Engineering and Systems",
+   "k": "jurnal",
+   "c": "cv",
+   "a": "",
+   "url": "https://www.scopus.com/record/display.uri?eid=2-s2.0-85184244970",
+   "sc": "https://www.scopus.com/record/display.uri?eid=2-s2.0-85184244970",
+   "n": 9,
+   "en": 1,
+   "scopus": 1,
+   "q": "Q2",
+   "src": "sinta"
+  },
+  {
    "y": 2024,
    "t": "A Systematic Review of Deep Learning for Intelligent Transportation Systems with Analysis and Perspectives",
    "v": "Jurnal INFOTEL 16(2)",
@@ -354,42 +374,6 @@
    "a": "Rahmat Gernowo, Oky Dwi Nurhayati, Christine Dewi",
    "doi": "10.20895/infotel.v16i2.1085",
    "n": 0,
-   "en": 1,
-   "src": "curated"
-  },
-  {
-   "y": 2024,
-   "t": "Vehicle Detection on the Traffic Using Detection Transformer (DETR) Algorithm",
-   "v": "International Journal of Artificial Intelligence and Science 1(1)",
-   "k": "jurnal",
-   "c": "cv",
-   "a": "Rofiatul Khoiriyah",
-   "doi": "10.63158/ijais.v1.i1.4",
-   "n": 1,
-   "en": 1,
-   "src": "curated"
-  },
-  {
-   "y": 2024,
-   "t": "Traffic Vehicle Detection Using Faster R-CNN: A Comparative Analysis of Backbone Architectures",
-   "v": "International Journal of Artificial Intelligence and Science 1(1)",
-   "k": "jurnal",
-   "c": "cv",
-   "a": "Luqman Hakim, Rofiatul Khoiriyah",
-   "doi": "10.63158/ijais.v1.i1.5",
-   "n": 1,
-   "en": 1,
-   "src": "curated"
-  },
-  {
-   "y": 2024,
-   "t": "The Comparative Analysis of Multi-Criteria Decision-Making Methods (MCDM) in Priorities of Industrial Location Development",
-   "v": "Jurnal INFOTEL 16(4)",
-   "k": "jurnal",
-   "c": "dss",
-   "a": "Agusta Praba Ristadi Pinem, Nur Wakhidah",
-   "doi": "10.20895/infotel.v16i4.1099",
-   "n": 1,
    "en": 1,
    "src": "curated"
   },
@@ -416,6 +400,42 @@
    "src": "curated"
   },
   {
+   "y": 2024,
+   "t": "The Comparative Analysis of Multi-Criteria Decision-Making Methods (MCDM) in Priorities of Industrial Location Development",
+   "v": "Jurnal INFOTEL 16(4)",
+   "k": "jurnal",
+   "c": "dss",
+   "a": "Agusta Praba Ristadi Pinem, Nur Wakhidah",
+   "doi": "10.20895/infotel.v16i4.1099",
+   "n": 1,
+   "en": 1,
+   "src": "curated"
+  },
+  {
+   "y": 2024,
+   "t": "Traffic Vehicle Detection Using Faster R-CNN: A Comparative Analysis of Backbone Architectures",
+   "v": "International Journal of Artificial Intelligence and Science 1(1)",
+   "k": "jurnal",
+   "c": "cv",
+   "a": "Luqman Hakim, Rofiatul Khoiriyah",
+   "doi": "10.63158/ijais.v1.i1.5",
+   "n": 1,
+   "en": 1,
+   "src": "curated"
+  },
+  {
+   "y": 2024,
+   "t": "Vehicle Detection on the Traffic Using Detection Transformer (DETR) Algorithm",
+   "v": "International Journal of Artificial Intelligence and Science 1(1)",
+   "k": "jurnal",
+   "c": "cv",
+   "a": "Rofiatul Khoiriyah",
+   "doi": "10.63158/ijais.v1.i1.4",
+   "n": 1,
+   "en": 1,
+   "src": "curated"
+  },
+  {
    "y": 2023,
    "t": "Contrast Stretching and Contrast Limited Adaptive Histogram Equalization for Recognizing Vehicles Based on YOLO Models",
    "v": "2023 International Conference on Information Technology and Computing (ICTECA), IEEE",
@@ -423,9 +443,25 @@
    "c": "cv",
    "a": "",
    "doi": "10.1109/icteca60133.2023.10490716",
+   "n": 1,
+   "en": 1,
+   "src": "curated",
+   "scopus": 1,
+   "sc": "https://www.scopus.com/record/display.uri?eid=2-s2.0-85191342763"
+  },
+  {
+   "y": 2023,
+   "t": "Integrated Decision-Making for Industrial Site Selection: Combining AHP, COPRAS and Spatial Approaches",
+   "v": "1st International Conference on Technology Engineering and Computing Applications (ICTECA 2023), IEEE",
+   "k": "prosiding",
+   "c": "dss",
+   "a": "Agusta Praba Ristadi Pinem",
+   "url": "https://www.scopus.com/record/display.uri?eid=2-s2.0-85191293052",
+   "sc": "https://www.scopus.com/record/display.uri?eid=2-s2.0-85191293052",
    "n": 0,
    "en": 1,
-   "src": "curated"
+   "scopus": 1,
+   "src": "sinta"
   },
   {
    "y": 2023,
@@ -451,23 +487,37 @@
   },
   {
    "y": 2022,
-   "t": "Sistem Pendukung Keputusan Pemilihan Bahan Baku Alumunium Menggunakan Metode VIKOR (VIseKriterijumska Kompromisno Rangiranje)",
-   "v": "Jurnal Sistem Informasi 9(1)",
-   "k": "jurnal",
-   "c": "dss",
-   "a": "Agusta Praba Ristadi Pinem, Mega Sekar Sari",
-   "doi": "10.30656/jsii.v9i1.3955",
-   "n": 0,
-   "src": "curated"
-  },
-  {
-   "y": 2022,
    "t": "Implementasi Sistem Administrasi di Unit Pelaksana Teknis Pusat Pengembangan Publikasi Ilmiah Dosen Universitas Semarang Berbasis Website",
    "v": "Jurnal Teknologi Informasi dan Ilmu Komputer (JTIIK) 9(3)",
    "k": "jurnal",
    "c": "sis",
    "a": "Muhammad Surya Jati Pradana, B. Very Christioko, Agusta Praba Ristadi Pinem",
    "doi": "10.25126/jtiik.2021864089",
+   "n": 0,
+   "src": "curated"
+  },
+  {
+   "y": 2022,
+   "t": "Improvement Object Detection Algorithm Based on YOLOv5 with BottleneckCSP",
+   "v": "IEEE International Conference on Communication, Networks and Satellite (COMNETSAT 2022)",
+   "k": "prosiding",
+   "c": "cv",
+   "a": "",
+   "url": "https://www.scopus.com/record/display.uri?eid=2-s2.0-85146702217",
+   "sc": "https://www.scopus.com/record/display.uri?eid=2-s2.0-85146702217",
+   "n": 16,
+   "en": 1,
+   "scopus": 1,
+   "src": "sinta"
+  },
+  {
+   "y": 2022,
+   "t": "Pemanfaatan Platform YouTube sebagai Media Pembelajaran bagi Guru-Guru Kelompok Kerja Madrasah (KKM) MA Ma'arif Kabupaten Demak",
+   "v": "TEMATIK 2(2)",
+   "k": "pkm",
+   "c": "pkm",
+   "a": "Agusta Praba Ristadi Pinem, Lenny Margaretta Huizen",
+   "doi": "10.26623/tmt.v2i2.4679",
    "n": 0,
    "src": "curated"
   },
@@ -484,17 +534,6 @@
   },
   {
    "y": 2022,
-   "t": "Pemanfaatan Platform YouTube sebagai Media Pembelajaran bagi Guru-Guru Kelompok Kerja Madrasah (KKM) MA Ma'arif Kabupaten Demak",
-   "v": "TEMATIK 2(2)",
-   "k": "pkm",
-   "c": "pkm",
-   "a": "Agusta Praba Ristadi Pinem, Lenny Margaretta Huizen",
-   "doi": "10.26623/tmt.v2i2.4679",
-   "n": 0,
-   "src": "curated"
-  },
-  {
-   "y": 2022,
    "t": "Peningkatan Kemampuan Membuat Desain Promosi Produk pada Usaha Mikro Kecil Menengah (UMKM) Provinsi Jawa Tengah",
    "v": "TEMATIK 2(2)",
    "k": "pkm",
@@ -505,26 +544,14 @@
    "src": "curated"
   },
   {
-   "y": 2021,
-   "t": "The Implementation of Intelligent Systems in Automating Vehicle Detection on the Road",
-   "v": "IAES International Journal of Artificial Intelligence (IJ-AI) 10(3)",
+   "y": 2022,
+   "t": "Sistem Pendukung Keputusan Pemilihan Bahan Baku Alumunium Menggunakan Metode VIKOR (VIseKriterijumska Kompromisno Rangiranje)",
+   "v": "Jurnal Sistem Informasi 9(1)",
    "k": "jurnal",
-   "c": "cv",
-   "a": "Susanto, Dimas Dwi Budiarjo, Prind Triajeng Pungkasanti",
-   "url": "https://garuda.kemdiktisaintek.go.id/documents/detail/2157996",
+   "c": "dss",
+   "a": "Agusta Praba Ristadi Pinem, Mega Sekar Sari",
+   "doi": "10.30656/jsii.v9i1.3955",
    "n": 0,
-   "en": 1,
-   "src": "curated"
-  },
-  {
-   "y": 2021,
-   "t": "Prediksi Pandemi COVID-19 Kota Semarang Menggunakan Pendekatan Neural Network",
-   "v": "Jurnal Riptek 15(1)",
-   "k": "jurnal",
-   "c": "ml",
-   "a": "Vensy Vydia, Saifur Rohman Cholil",
-   "doi": "10.35475/riptek.v15i1.113",
-   "n": 1,
    "src": "curated"
   },
   {
@@ -550,6 +577,32 @@
    "src": "curated"
   },
   {
+   "y": 2021,
+   "t": "Prediksi Pandemi COVID-19 Kota Semarang Menggunakan Pendekatan Neural Network",
+   "v": "Jurnal Riptek 15(1)",
+   "k": "jurnal",
+   "c": "ml",
+   "a": "Vensy Vydia, Saifur Rohman Cholil",
+   "doi": "10.35475/riptek.v15i1.113",
+   "n": 1,
+   "src": "curated"
+  },
+  {
+   "y": 2021,
+   "t": "The Implementation of Intelligent Systems in Automating Vehicle Detection on the Road",
+   "v": "IAES International Journal of Artificial Intelligence (IJ-AI) 10(3)",
+   "k": "jurnal",
+   "c": "cv",
+   "a": "Susanto, Dimas Dwi Budiarjo, Prind Triajeng Pungkasanti",
+   "url": "https://garuda.kemdiktisaintek.go.id/documents/detail/2157996",
+   "n": 4,
+   "en": 1,
+   "src": "curated",
+   "scopus": 1,
+   "q": "Q2",
+   "sc": "https://www.scopus.com/record/display.uri?eid=2-s2.0-85108594576"
+  },
+  {
    "y": 2020,
    "t": "Best Employee Selection in Central Java Using the ELECTRE Method",
    "v": "Engineering, Information and Agricultural Technology in the Global Digital Revolution (CRC Press)",
@@ -563,23 +616,23 @@
   },
   {
    "y": 2019,
-   "t": "Penggunaan Model Hidden Markov dan Metode Neural Network sebagai Penerapan Teknologi Pengenalan Wajah",
-   "v": "ScientiCO: Computer Science and Informatics Journal 2(1)",
-   "k": "jurnal",
-   "c": "cv",
-   "a": "Basworo Ardi Pramono, Whisnumurti Adhiwibowo",
-   "doi": "10.22487/j26204118.2019.v2.i1.12173",
-   "n": 0,
-   "src": "curated"
-  },
-  {
-   "y": 2019,
    "t": "Pemodelan Penentuan Kredit Simpan Pinjam Menggunakan Metode Additive Ratio Assessment (ARAS)",
    "v": "Jurnal Pengembangan Rekayasa dan Teknologi 3(1)",
    "k": "jurnal",
    "c": "dss",
    "a": "Charis Maulana, Agusta Praba Ristadi Pinem",
    "doi": "10.26623/jprt.v15i1.1483",
+   "n": 0,
+   "src": "curated"
+  },
+  {
+   "y": 2019,
+   "t": "Penggunaan Model Hidden Markov dan Metode Neural Network sebagai Penerapan Teknologi Pengenalan Wajah",
+   "v": "ScientiCO: Computer Science and Informatics Journal 2(1)",
+   "k": "jurnal",
+   "c": "cv",
+   "a": "Basworo Ardi Pramono, Whisnumurti Adhiwibowo",
+   "doi": "10.22487/j26204118.2019.v2.i1.12173",
    "n": 0,
    "src": "curated"
   },
@@ -602,9 +655,11 @@
    "c": "cv",
    "a": "",
    "doi": "10.1109/cais.2018.8441978",
-   "n": 3,
+   "n": 4,
    "en": 1,
-   "src": "curated"
+   "src": "curated",
+   "scopus": 1,
+   "sc": "https://www.scopus.com/record/display.uri?eid=2-s2.0-85053543725"
   },
   {
    "y": 2018,
@@ -650,5 +705,377 @@
    "n": 0,
    "src": "curated"
   }
+ ],
+ "sinta": {
+  "id": "5972607",
+  "url": "https://sinta.kemdiktisaintek.go.id/authors/profile/5972607",
+  "score": "1.539",
+  "score3": "707",
+  "affil_score": "1.539",
+  "prodi": "S1 Teknik Informatika",
+  "subjects": [
+   "Kecerdasan Buatan",
+   "Image Processing",
+   "Bioinformatics"
+  ],
+  "table": {
+   "Scopus": {
+    "articles": 7,
+    "citations": 33,
+    "cited": 5,
+    "h": 4,
+    "i10": 1,
+    "g": 6
+   },
+   "Google Scholar": {
+    "articles": 116,
+    "citations": 358,
+    "cited": 50,
+    "h": 8,
+    "i10": 6,
+    "g": 1
+   },
+   "Web of Science": {
+    "articles": 7,
+    "citations": 2,
+    "cited": 1,
+    "h": 1,
+    "i10": 0,
+    "g": 1
+   }
+  }
+ },
+ "grants": [
+  {
+   "y": 2025,
+   "t": "BEV-TrajNet: Benchmark Nasional untuk Prediksi Trajektori Kendaraan Otonom Berbasis Kecerdasan Buatan Menuju Transportasi Pintar dan Aman di Indonesia",
+   "lead": "Aria Hendrawan",
+   "members": "Mudjiastuti Handajani, Titin Winarti, Vensy Vydia",
+   "scheme": "Penelitian Fundamental Reguler (PFR)",
+   "funder": "Kemdiktisaintek (BIMA)",
+   "role": "Ketua"
+  },
+  {
+   "y": 2024,
+   "t": "Efektivitas Deep Learning dalam Memprediksi Hasil Panen Padi: Studi Kasus di Kabupaten Grobogan",
+   "lead": "Vensy Vydia",
+   "members": "Yulinda Kusumaningrum, Aria Hendrawan, Saifur Rohman Cholil",
+   "scheme": "Penelitian Hibah Kompetitif Internal (PHKI)",
+   "funder": "Internal USM",
+   "role": "Anggota"
+  },
+  {
+   "y": 2023,
+   "t": "Analisis Komparatif Metode Multi-Criteria Decision Making (MCDM) dalam Penentuan Prioritas Pengembangan Lokasi Kawasan Industri",
+   "lead": "Agusta Praba Ristadi Pinem",
+   "members": "Aria Hendrawan, Nur Wakhidah",
+   "scheme": "Penelitian Hibah Kompetitif Internal (PHKI)",
+   "funder": "Internal USM",
+   "role": "Anggota"
+  },
+  {
+   "y": 2022,
+   "t": "Analisis Faktor Pengaruh Lama Studi pada Mahasiswa Tingkat Akhir dengan Metode SMARTER untuk Kelulusan Tepat Waktu",
+   "lead": "Lenny Margaretta Huizen",
+   "members": "Aria Hendrawan, Agusta Praba Ristadi Pinem",
+   "scheme": "Penelitian Dosen Pemula (PDP)",
+   "funder": "Internal USM",
+   "role": "Anggota"
+  },
+  {
+   "y": 2021,
+   "t": "Prediksi Pandemi COVID-19 Kota Semarang Menggunakan ARIMA",
+   "lead": "Aria Hendrawan",
+   "members": "Saifur Rohman Cholil, Tirta Yurista Kumkamdhani",
+   "scheme": "Penelitian Dosen Pemula (PDP)",
+   "funder": "Internal USM",
+   "role": "Ketua"
+  },
+  {
+   "y": 2021,
+   "t": "Prediksi Pandemi COVID-19 Kota Semarang Menggunakan Pendekatan Machine Learning",
+   "lead": "Vensy Vydia",
+   "members": "Aria Hendrawan, Saifur Rohman Cholil",
+   "scheme": "Penelitian Dosen Pemula (PDP)",
+   "funder": "Internal USM",
+   "role": "Anggota"
+  },
+  {
+   "y": 2020,
+   "t": "Pengembangan Stemming untuk Artikel Berbahasa Indonesia",
+   "lead": "Aria Hendrawan",
+   "members": "Titin Winarti, Henny Indriyawati",
+   "scheme": "Penelitian Dosen Pemula (PDP)",
+   "funder": "Internal USM",
+   "role": "Ketua"
+  },
+  {
+   "y": 2020,
+   "t": "Pengembangan Clustering K-Means untuk Artikel Berbahasa Indonesia",
+   "lead": "Henny Indriyawati",
+   "members": "Aria Hendrawan, Basworo Ardi Pramono",
+   "scheme": "Penelitian Dosen Pemula (PDP)",
+   "funder": "Internal USM",
+   "role": "Anggota"
+  },
+  {
+   "y": 2019,
+   "t": "Sistem Pendukung Keputusan untuk Penentuan Kredit Simpan Pinjam Menggunakan Metode Additive Ratio Assessment (ARAS)",
+   "lead": "Charis Maulana",
+   "members": "Aria Hendrawan, Agusta Praba Ristadi Pinem",
+   "scheme": "Penelitian Dosen Pemula (PDP)",
+   "funder": "Internal USM",
+   "role": "Anggota"
+  },
+  {
+   "y": 2018,
+   "t": "Penggunaan Hidden Markov Models dan Neural Network Method sebagai Penerapan Teknologi Pengenalan Wajah",
+   "lead": "Aria Hendrawan",
+   "members": "Basworo Ardi Pramono, Whisnumurti Adhiwibowo",
+   "scheme": "Penelitian Dosen Pemula (PDP)",
+   "funder": "Internal USM",
+   "role": "Ketua"
+  }
+ ],
+ "services": [
+  {
+   "y": 2026,
+   "t": "Implementasi Website sebagai Media Promosi Digital dalam Mendukung Kemandirian BUMDes dan Penguatan Tata Kelola Desa Wisata Tegalwaton, Kabupaten Semarang",
+   "lead": "Harmini",
+   "members": "Aria Hendrawan, Supari",
+   "scheme": "PkM Internal",
+   "funder": "Internal USM",
+   "role": "Anggota"
+  },
+  {
+   "y": 2025,
+   "t": "Edukasi Digital tentang Penggunaan Bahan Pengawet pada Produk Makanan UMKM Srikandi Cipta Bahari Semarang",
+   "lead": "Aria Hendrawan",
+   "members": "",
+   "scheme": "PkM Internal",
+   "funder": "Internal USM",
+   "role": "Ketua"
+  },
+  {
+   "y": 2025,
+   "t": "Robotic Ship Fishery Meningkatkan Penghasilan Kelompok Nelayan Desa Surodadi Kabupaten Demak",
+   "lead": "Supari",
+   "members": "Purwanto, Aria Hendrawan",
+   "scheme": "PkM Kompetitif Nasional",
+   "funder": "Kemdiktisaintek (BIMA)",
+   "role": "Anggota"
+  },
+  {
+   "y": 2024,
+   "t": "Peningkatan Penggunaan Website Framework Laravel pada Komunitas UMKM RW 15 Tanjung Mas Semarang Utara",
+   "lead": "Vensy Vydia",
+   "members": "Aria Hendrawan, Lenny Margaretta Huizen",
+   "scheme": "PkM Internal",
+   "funder": "Internal USM",
+   "role": "Anggota"
+  },
+  {
+   "y": 2024,
+   "t": "Peningkatan Kemampuan Penggunaan Arduino pada Siswa SMA N 1 Tahunan Jepara",
+   "lead": "Vensy Vydia",
+   "members": "Aria Hendrawan, Lenny Margaretta Huizen",
+   "scheme": "PkM Internal",
+   "funder": "Internal USM",
+   "role": "Anggota"
+  },
+  {
+   "y": 2024,
+   "t": "Utilization of Instagram for Promotional Media in Increasing Product Sales",
+   "lead": "Aria Hendrawan",
+   "members": "",
+   "scheme": "PkM Internal",
+   "funder": "Internal USM",
+   "role": "Ketua"
+  },
+  {
+   "y": 2023,
+   "t": "Peningkatan Penggunaan Aplikasi Mobile dalam Pengelolaan Komunitas UMKM RW 15 Tanjung Mas Semarang Utara",
+   "lead": "Aria Hendrawan",
+   "members": "Vensy Vydia, Lenny Margaretta Huizen",
+   "scheme": "PkM Internal",
+   "funder": "Internal USM",
+   "role": "Ketua"
+  },
+  {
+   "y": 2022,
+   "t": "Pemanfaatan Platform YouTube sebagai Media Pembelajaran bagi Guru-Guru KKM MA Ma'arif Kabupaten Demak",
+   "lead": "Aria Hendrawan",
+   "members": "Agusta Praba Ristadi Pinem, Lenny Margaretta Huizen",
+   "scheme": "PkM Internal",
+   "funder": "Internal USM",
+   "role": "Ketua"
+  },
+  {
+   "y": 2022,
+   "t": "Peningkatan Kemampuan Microsoft Office Specialist PowerPoint bagi Guru-Guru KKM MA Ma'arif 03 Kabupaten Demak",
+   "lead": "Soiful Hadi",
+   "members": "Agusta Praba Ristadi Pinem, Aria Hendrawan",
+   "scheme": "PkM Internal",
+   "funder": "Internal USM",
+   "role": "Anggota"
+  }
+ ],
+ "iprs": [
+  {
+   "y": 2026,
+   "t": "WIRAPATH",
+   "cat": "Hak Cipta",
+   "inventors": "Dian Purbo Wicaksono, Aria Hendrawan",
+   "no": "EC002026115217"
+  },
+  {
+   "y": 2026,
+   "t": "Poster Sistem Monitoring Proyek BTS Berbasis Web pada PT Surya Pilar Optima",
+   "cat": "Hak Cipta",
+   "inventors": "Rizal Aditya Jatmiko, Azka Rois Syabana, Hazel Refaya Putra Yakanama, Febrian Wahyu Christanto, Aria Hendrawan",
+   "no": "EC002026117438"
+  },
+  {
+   "y": 2026,
+   "t": "Pengembangan Sistem Tracking dan Monitoring Pengiriman Paket Berbasis Web pada PT Pos Regional 4 Semarang",
+   "cat": "Hak Cipta",
+   "inventors": "Ramadhani Arya Himandoko, Aria Hendrawan",
+   "no": "EC002026126590"
+  },
+  {
+   "y": 2026,
+   "t": "Smart Environment: Paradigma Baru dan Teknologi Pengelolaan Lingkungan",
+   "cat": "Hak Cipta",
+   "inventors": "Zulfikar, Aria Hendrawan",
+   "no": "EC002026147043"
+  },
+  {
+   "y": 2026,
+   "t": "Implementasi Website sebagai Media Promosi Digital dalam Mendukung Kemandirian BUMDes dan Penguatan Tata Kelola Desa Wisata Tegalwaton, Kabupaten Semarang",
+   "cat": "Hak Cipta",
+   "inventors": "Harmini, Aria Hendrawan, Supari, Titik Nurhayati, Nur Wakhidah",
+   "no": "EC002026116787"
+  },
+  {
+   "y": 2026,
+   "t": "Pembangunan Sistem Informasi Pendaftaran dan Informasi Berbasis Web pada Event Sindoro Sumbing Triathlon Menggunakan Framework Laravel",
+   "cat": "Hak Cipta",
+   "inventors": "Ivan Christian Godtomo, Aria Hendrawan",
+   "no": "EC002026127061"
+  },
+  {
+   "y": 2026,
+   "t": "Generative Artificial Intelligence: Teori, Model, dan Implementasi",
+   "cat": "Hak Cipta",
+   "inventors": "Gde Wikan Pradnya Dana, Ni Kadek Dessy Hariyanti, I Made Surya Kumara, Aria Hendrawan, Gde Putu Rizkynindra Sukma Jati, Rizka Ardiantika, dkk.",
+   "no": "EC002026033035"
+  },
+  {
+   "y": 2025,
+   "t": "Peningkatan Kemampuan Penggunaan Arduino pada Siswa SMA N 1 Tahunan Jepara",
+   "cat": "Hak Cipta",
+   "inventors": "Vensy Vydia, Aria Hendrawan, Lenny Margaretta Huizen",
+   "no": "EC00202517291"
+  },
+  {
+   "y": 2025,
+   "t": "Potensi Tulang Ikan Bandeng (Chanos chanos) dan Ikan Tuna (Thunnus sp.) sebagai Sumber Gelatin Halal",
+   "cat": "Hak Cipta",
+   "inventors": "Mita Nurul Azkia, Amerti Irvin Widowati, Nuria Universari, Dewi Larasati, Aria Hendrawan",
+   "no": "EC00202526655"
+  },
+  {
+   "y": 2025,
+   "t": "Edukasi Digital tentang Penggunaan Bahan Pengawet pada Produk Makanan UMKM Srikandi Cipta Bahari Semarang",
+   "cat": "Hak Cipta",
+   "inventors": "Aria Hendrawan, Sri Budi Wahjuningsih, Mita Nurul Azkia, Vensy Vydia",
+   "no": "EC002025161829"
+  }
+ ],
+ "books": [
+  {
+   "y": 2026,
+   "t": "Strategi dan Model Pembelajaran (Pembahasan Buku untuk Perguruan Tinggi S1)",
+   "cat": "Buku Referensi",
+   "isbn": "9786347693006",
+   "authors": "Aria Hendrawan, Ida Ayu Widhiantari, Yumi Hartati, Satutik Rahayu, Isnaini Puspitasari, Panca Aditya Subekti, I Made Sujana, Muntari",
+   "pub": "PT Star Digital Publishing, Yogyakarta"
+  },
+  {
+   "y": 2026,
+   "t": "Hukum Informasi dan Transaksi Elektronik",
+   "cat": "Buku Referensi",
+   "isbn": "9786347868794",
+   "authors": "Aria Hendrawan, Zaenal Arifin",
+   "pub": "PT Star Digital Publishing, Bantul"
+  },
+  {
+   "y": 2026,
+   "t": "Smart Environment: Paradigma Baru dan Teknologi Pengelolaan Lingkungan",
+   "cat": "Buku Referensi",
+   "isbn": "9786347868138",
+   "authors": "Zulfikar, Rais Amin, Sugiarto, Aria Hendrawan",
+   "pub": "PT Star Digital Publishing, Bantul"
+  },
+  {
+   "y": 2026,
+   "t": "Generative Artificial Intelligence: Teori, Model, dan Implementasi",
+   "cat": "Buku",
+   "isbn": "9786347521613",
+   "authors": "Gde Wikan Pradnya Dana, Ni Kadek Dessy Hariyanti, I Made Surya Kumara, Aria Hendrawan, Gde Putu Rizkynindra Sukma Jati, dkk.",
+   "pub": "PT Star Digital Publishing, Bantul"
+  },
+  {
+   "y": 2026,
+   "t": "Pengantar Ilmu Komputer",
+   "cat": "Buku Referensi",
+   "isbn": "9786347521873",
+   "authors": "Ahmad Farisi, Lisa Amelia Fransen, Dorie P. Kesuma, Ni Luh Ayu Kartika Yuniastari Sarja, Alauddin Maulana Hirzan, Triana Elizabeth, Nur Rachmat, Andri Wijaya, Aria Hendrawan",
+   "pub": "PT Star Digital Publishing, Yogyakarta"
+  },
+  {
+   "y": 2026,
+   "t": "Database System",
+   "cat": "Buku Referensi",
+   "isbn": "9786347521842",
+   "authors": "E. Efitra, R.Y. Widiastuti, Y. Lianawati, Desi Pibriana, P.I. Ciptayani, dkk.",
+   "pub": "PT Star Digital Publishing, Yogyakarta"
+  },
+  {
+   "y": 2025,
+   "t": "Masa Depan Pertanian Indonesia: Deep Learning untuk Prediksi Panen Padi",
+   "cat": "Buku Referensi",
+   "isbn": "9786342485071",
+   "authors": "Vensy Vydia, Aria Hendrawan, Yulinda Kusumaningrum, Saifur Rohman Cholil",
+   "pub": "CV Eureka Media Aksara, Purbalingga"
+  },
+  {
+   "y": 2025,
+   "t": "Data Mining: Teknik dan Implementasi",
+   "cat": "Buku Referensi",
+   "isbn": "9786237986904",
+   "authors": "Titin Winarni, Aria Hendrawan, Edi Widodo",
+   "pub": "Universitas Semarang Press, Semarang"
+  },
+  {
+   "y": 2025,
+   "t": "Artificial Intelligence (AI) dalam Kehidupan: Tantangan dan Solusi Hidup di Era Digital",
+   "cat": "Buku Referensi",
+   "isbn": "9786347400925",
+   "authors": "I Made Surya Kumara, Gde Putu Rizkynindra Sukma Jati, Joni, Johanes Terang Kita Perangin Angin, Devi Valentino Waas, Aria Hendrawan, Oki Saputra",
+   "pub": "PT Star Digital Publishing, Yogyakarta"
+  },
+  {
+   "y": 2025,
+   "t": "Smart City Technology: Konsep, Inovasi, dan Implementasi",
+   "cat": "Buku Referensi",
+   "isbn": "9786347400086",
+   "authors": "Risang Setyobudi, Syarifah Nur Octavia, Liana Dwi Yulistiyanti, Nursahar Buang, Syawal Aprian, dkk.",
+   "pub": "PT Star Digital Publishing, Bantul"
+  }
+ ],
+ "exclude": [
+  "Student Perception of Student Centered e-Learning Environment (SCeLE) as Media to Support Teaching and Learning Activities at the University of Indonesia",
+  "Support vector machine for omega 3 classification based on histogram equalization"
  ]
 }
