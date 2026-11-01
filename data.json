@@ -1,0 +1,654 @@
+{
+ "updated": "2026-11-01",
+ "metrics": {
+  "works": 62,
+  "citations": 73,
+  "h_index": 4,
+  "i10_index": 2,
+  "source": "OpenAlex"
+ },
+ "counts_by_year": [
+  [
+   2014,
+   1,
+   0
+  ],
+  [
+   2016,
+   2,
+   1
+  ],
+  [
+   2017,
+   1,
+   1
+  ],
+  [
+   2018,
+   2,
+   0
+  ],
+  [
+   2019,
+   5,
+   1
+  ],
+  [
+   2020,
+   5,
+   5
+  ],
+  [
+   2021,
+   7,
+   8
+  ],
+  [
+   2022,
+   7,
+   11
+  ],
+  [
+   2023,
+   3,
+   19
+  ],
+  [
+   2024,
+   6,
+   13
+  ],
+  [
+   2025,
+   10,
+   5
+  ],
+  [
+   2026,
+   13,
+   9
+  ]
+ ],
+ "profiles": [
+  {
+   "label": "Scopus",
+   "id": "57200985617",
+   "url": "https://www.scopus.com/authid/detail.uri?authorId=57200985617"
+  },
+  {
+   "label": "ORCID",
+   "id": "0000-0002-0732-6447",
+   "url": "https://orcid.org/0000-0002-0732-6447"
+  },
+  {
+   "label": "OpenAlex",
+   "id": "A5085345108",
+   "url": "https://openalex.org/A5085345108"
+  },
+  {
+   "label": "Garuda",
+   "id": "491641",
+   "url": "https://garuda.kemdiktisaintek.go.id/author/view/491641"
+  }
+ ],
+ "pubs": [
+  {
+   "y": 2026,
+   "t": "Penerapan Teknologi Robotic Ship Fishery untuk Pemberdayaan Nelayan Desa Surodadi Kabupaten Demak",
+   "v": "Jurnal Surya Masyarakat 8(2)",
+   "k": "pkm",
+   "c": "pkm",
+   "a": "Supari, Purwanto",
+   "doi": "10.26714/jsm.8.2.2026.251-258",
+   "n": 0,
+   "src": "curated"
+  },
+  {
+   "y": 2026,
+   "t": "Peningkatan Kapasitas Digital Penjahit UMKM Melalui Aplikasi Pemesanan Mobile SIJAH di Kota Semarang",
+   "v": "Jurnal DIMASTIK 4(2)",
+   "k": "pkm",
+   "c": "pkm",
+   "a": "Atmoko Nugroho, Astrid Novita Putri, Saifur Rohman Cholil",
+   "doi": "10.26623/dimastik.v4i2.15794",
+   "n": 0,
+   "src": "curated"
+  },
+  {
+   "y": 2026,
+   "t": "Data-Driven Traffic for Infrastructure Planning: An LSTM Approach Using Indonesian Road-Vehicle Trends",
+   "v": "Journal of Information Systems and Informatics 8(2)",
+   "k": "jurnal",
+   "c": "its",
+   "a": "Nabilah Putri",
+   "doi": "10.63158/journalisi.v8i2.1516",
+   "n": 0,
+   "en": 1,
+   "src": "curated"
+  },
+  {
+   "y": 2026,
+   "t": "Pemodelan Urutan Jangka Pendek vs Jangka Panjang: LSTM vs TSFormer dalam Prediksi Lalu Lintas Perkotaan",
+   "v": "Jurnal Informatika Teknologi dan Sains (Jinteks) 8(1)",
+   "k": "jurnal",
+   "c": "its",
+   "a": "Jovita Wayan Ramadhani",
+   "doi": "10.51401/jinteks.v8i1.6996",
+   "n": 0,
+   "src": "curated"
+  },
+  {
+   "y": 2026,
+   "t": "Analysis of the Best Social Media Platforms for Promotion Using Machine Learning and RFE Feature Selection: A Comparative Study of Gradient Boosting, XGBoost, CNN, and SVR",
+   "v": "Journal of Applied Informatics and Computing 10(1)",
+   "k": "jurnal",
+   "c": "ml",
+   "a": "Maulina Putri",
+   "doi": "10.30871/jaic.v10i1.12049",
+   "n": 0,
+   "en": 1,
+   "src": "curated"
+  },
+  {
+   "y": 2026,
+   "t": "Pengembangan Early Warning System Harga Pangan Strategis Berbasis Integrasi Fitur Meteorologi Menggunakan Perbandingan SVR dan XGBoost",
+   "v": "JIPI (Jurnal Ilmiah Penelitian dan Pembelajaran Informatika) 11(2)",
+   "k": "jurnal",
+   "c": "ml",
+   "a": "Jihan Kusumawardhani",
+   "doi": "10.29100/jipi.v11i2.10168",
+   "n": 0,
+   "src": "curated"
+  },
+  {
+   "y": 2026,
+   "t": "Deteksi Gangguan Tidur Menggunakan Support Vector Machine pada Aplikasi Web Streamlit",
+   "v": "JOINS (Journal of Information System) 11(1)",
+   "k": "jurnal",
+   "c": "ml",
+   "a": "Satria Dava Riansa",
+   "doi": "10.33633/joins.v11i1.16125",
+   "n": 0,
+   "src": "curated"
+  },
+  {
+   "y": 2026,
+   "t": "Analisis Sentimen Komentar YouTube terhadap Kasus Bjorka dengan Membandingkan Naive Bayes dan SVM",
+   "v": "KETIK: Jurnal Informatika 3(3)",
+   "k": "jurnal",
+   "c": "nlp",
+   "a": "Rizky Haryanto Putro",
+   "doi": "10.70404/ketik.v3i03.626",
+   "n": 0,
+   "src": "curated"
+  },
+  {
+   "y": 2026,
+   "t": "Analisis Sentimen Komentar YouTube terhadap Program Makan Bergizi Gratis (MBG) Menggunakan Long Short-Term Memory (LSTM)",
+   "v": "KETIK: Jurnal Informatika 3(3)",
+   "k": "jurnal",
+   "c": "nlp",
+   "a": "Maulifa Sekar Arum",
+   "doi": "10.70404/ketik.v3i03.627",
+   "n": 0,
+   "src": "curated"
+  },
+  {
+   "y": 2026,
+   "t": "A Knowledge Management Integration Model within Enterprise Architecture to Improve the Competitiveness of Higher Education Institutions",
+   "v": "JINAV: Journal of Information and Visualization",
+   "k": "jurnal",
+   "c": "sis",
+   "a": "",
+   "doi": "10.35877/454ri.jinav4955",
+   "n": 0,
+   "en": 1,
+   "src": "curated"
+  },
+  {
+   "y": 2026,
+   "t": "Queue-Based Batch Processing Architecture for Scalable Educational Assessment Systems Using MERN Stack",
+   "v": "Jurnal Ilmiah Informatika dan Komputer 3(1)",
+   "k": "jurnal",
+   "c": "sis",
+   "a": "April Firman Daru, Toti Kresna Wardana",
+   "doi": "10.69533/informatech.volume3number1.492",
+   "n": 0,
+   "en": 1,
+   "src": "curated"
+  },
+  {
+   "y": 2025,
+   "t": "Hybrid Deep Learning for Spatiotemporal Traffic Forecasting: Integrating LSTM, Transformer, and Graph Convolutional Networks on the METR-LA Dataset",
+   "v": "International Journal of Data Science 6(2)",
+   "k": "jurnal",
+   "c": "its",
+   "a": "",
+   "doi": "10.18517/ijods.6.2.103-112.2025",
+   "n": 2,
+   "en": 1,
+   "src": "curated"
+  },
+  {
+   "y": 2025,
+   "t": "LSTM Forecasting and K-Means Clustering for Passenger Mobility Management at Bus Terminals",
+   "v": "Journal of Information Systems and Informatics 7(3)",
+   "k": "jurnal",
+   "c": "its",
+   "a": "Hasna Rizqia Khairunnisa",
+   "doi": "10.51519/journalisi.v7i3.1159",
+   "n": 1,
+   "en": 1,
+   "src": "curated"
+  },
+  {
+   "y": 2025,
+   "t": "Vehicle Detection and Tracking using Coarse-to-Fine Module and Spatial Pyramid Pooling–Fast with DeepSORT",
+   "v": "Signal and Image Processing Letters 7(2)",
+   "k": "jurnal",
+   "c": "cv",
+   "a": "Anita Nur Widdia Saputri, Rofiatul Khoiriyah",
+   "doi": "10.31763/simple.v7i2.118",
+   "n": 0,
+   "en": 1,
+   "src": "curated"
+  },
+  {
+   "y": 2025,
+   "t": "A Hybrid Image Processing Approach for Real-Time Face Recognition in Attendance Monitoring",
+   "v": "International Journal of Artificial Intelligence and Science 2(1)",
+   "k": "jurnal",
+   "c": "cv",
+   "a": "Davit Cany Agho",
+   "doi": "10.63158/ijais.v2.i1.17",
+   "n": 1,
+   "en": 1,
+   "src": "curated"
+  },
+  {
+   "y": 2025,
+   "t": "Artificial Neural Network for Corn Quality Classification Based on Seed Damage and Aflatoxin Attributes",
+   "v": "Signal and Image Processing Letters 7(1)",
+   "k": "jurnal",
+   "c": "ml",
+   "a": "Innayah Maulida, Rofiatul Khoiriyah",
+   "doi": "10.31763/simple.v7i1.119",
+   "n": 0,
+   "en": 1,
+   "src": "curated"
+  },
+  {
+   "y": 2025,
+   "t": "Speech-Driven Visitor Notification System Using Telegram Bot and Voice Activity Detection for Real-Time Retail Applications",
+   "v": "International Journal of Artificial Intelligence and Science 2(2)",
+   "k": "jurnal",
+   "c": "iot",
+   "a": "Aria Setiaji, B. Very Christioko, Lenny Margaretta Huizen",
+   "doi": "10.63158/ijais.v2i2.44",
+   "n": 0,
+   "en": 1,
+   "src": "curated"
+  },
+  {
+   "y": 2025,
+   "t": "Comparative Sentiment Analysis on Mobile JKN Application Using Logistic Regression with SMOTE Based Statistical Feature Selection",
+   "v": "Journal of Applied Informatics and Computing 9(6)",
+   "k": "jurnal",
+   "c": "nlp",
+   "a": "Rafika Farkhul Awaliyah",
+   "doi": "10.30871/jaic.v9i6.10520",
+   "n": 0,
+   "en": 1,
+   "src": "curated"
+  },
+  {
+   "y": 2025,
+   "t": "Analisis Sentimen terhadap Komentar YouTube Terkait Judi Online Menggunakan Metode Convolutional Neural Network (CNN)",
+   "v": "Djtechno: Jurnal Teknologi Informasi 6(3)",
+   "k": "jurnal",
+   "c": "nlp",
+   "a": "Abhinaya Putra",
+   "doi": "10.46576/djtechno.v6i3.8085",
+   "n": 0,
+   "src": "curated"
+  },
+  {
+   "y": 2025,
+   "t": "Klasifikasi Pertanyaan Quora Menggunakan Metode Keyword-based dan Analisis Sentimen dengan ComplementNB",
+   "v": "Jurnal Informatika: Jurnal Pengembangan IT 10(2)",
+   "k": "jurnal",
+   "c": "nlp",
+   "a": "Alwan Adiuntoro",
+   "doi": "10.30591/jpit.v10i2.7965",
+   "n": 0,
+   "src": "curated"
+  },
+  {
+   "y": 2025,
+   "t": "Strategi Digital Marketing untuk UMKM: Membangun Branding Online dan Konten Menarik UMKM RW 15 Tanjung Mas Semarang Utara",
+   "v": "Jurnal DIMASTIK 3(2)",
+   "k": "pkm",
+   "c": "pkm",
+   "a": "Vensy Vydia, Lenny Margaretta Huizen, Saifur Rohman Cholil",
+   "doi": "10.26623/dimastik.v3i2.12640",
+   "n": 0,
+   "src": "curated"
+  },
+  {
+   "y": 2025,
+   "t": "Peningkatan Kemampuan Penggunaan Arduino pada Siswa SMA N 1 Tahunan Jepara",
+   "v": "Jurnal DIMASTIK 3(1)",
+   "k": "pkm",
+   "c": "pkm",
+   "a": "Lenny Margaretta Huizen, Vensy Vydia",
+   "doi": "10.26623/dimastik.v3i1.11370",
+   "n": 0,
+   "src": "curated"
+  },
+  {
+   "y": 2024,
+   "t": "A Systematic Review of Deep Learning for Intelligent Transportation Systems with Analysis and Perspectives",
+   "v": "Jurnal INFOTEL 16(2)",
+   "k": "jurnal",
+   "c": "its",
+   "a": "Rahmat Gernowo, Oky Dwi Nurhayati, Christine Dewi",
+   "doi": "10.20895/infotel.v16i2.1085",
+   "n": 0,
+   "en": 1,
+   "src": "curated"
+  },
+  {
+   "y": 2024,
+   "t": "Vehicle Detection on the Traffic Using Detection Transformer (DETR) Algorithm",
+   "v": "International Journal of Artificial Intelligence and Science 1(1)",
+   "k": "jurnal",
+   "c": "cv",
+   "a": "Rofiatul Khoiriyah",
+   "doi": "10.63158/ijais.v1.i1.4",
+   "n": 1,
+   "en": 1,
+   "src": "curated"
+  },
+  {
+   "y": 2024,
+   "t": "Traffic Vehicle Detection Using Faster R-CNN: A Comparative Analysis of Backbone Architectures",
+   "v": "International Journal of Artificial Intelligence and Science 1(1)",
+   "k": "jurnal",
+   "c": "cv",
+   "a": "Luqman Hakim, Rofiatul Khoiriyah",
+   "doi": "10.63158/ijais.v1.i1.5",
+   "n": 1,
+   "en": 1,
+   "src": "curated"
+  },
+  {
+   "y": 2024,
+   "t": "The Comparative Analysis of Multi-Criteria Decision-Making Methods (MCDM) in Priorities of Industrial Location Development",
+   "v": "Jurnal INFOTEL 16(4)",
+   "k": "jurnal",
+   "c": "dss",
+   "a": "Agusta Praba Ristadi Pinem, Nur Wakhidah",
+   "doi": "10.20895/infotel.v16i4.1099",
+   "n": 1,
+   "en": 1,
+   "src": "curated"
+  },
+  {
+   "y": 2024,
+   "t": "Peningkatan Penggunaan Aplikasi Mobile dalam Pengelolaan Komunitas UMKM RW 15 Tanjung Mas Semarang Utara",
+   "v": "Jurnal Pengabdian DIMASTIK 2(1)",
+   "k": "pkm",
+   "c": "pkm",
+   "a": "Vensy Vydia, Lenny Margaretta Huizen",
+   "doi": "10.26623/dimastik.v2i1.8204",
+   "n": 0,
+   "src": "curated"
+  },
+  {
+   "y": 2024,
+   "t": "Peningkatan Penggunaan Website Framework Laravel pada Komunitas UMKM RW 15 Tanjung Mas Semarang Utara",
+   "v": "Jurnal DIMASTIK 2(2)",
+   "k": "pkm",
+   "c": "pkm",
+   "a": "Vensy Vydia, Lenny Margaretta Huizen",
+   "doi": "10.26623/dimastik.v2i2.9603",
+   "n": 0,
+   "src": "curated"
+  },
+  {
+   "y": 2023,
+   "t": "Contrast Stretching and Contrast Limited Adaptive Histogram Equalization for Recognizing Vehicles Based on YOLO Models",
+   "v": "2023 International Conference on Information Technology and Computing (ICTECA), IEEE",
+   "k": "prosiding",
+   "c": "cv",
+   "a": "",
+   "doi": "10.1109/icteca60133.2023.10490716",
+   "n": 0,
+   "en": 1,
+   "src": "curated"
+  },
+  {
+   "y": 2023,
+   "t": "Pemanfaatan Instagram untuk Media Promosi dalam Meningkatkan Ketahanan UMKM bagi Forum Gerakan Terintegrasi Masyarakat Koperasi dan Usaha Mikro (Gerai Kopimi) Lamper Lor Semarang Selatan",
+   "v": "Jurnal Surya Masyarakat 6(1)",
+   "k": "pkm",
+   "c": "pkm",
+   "a": "Khoirudin, Vensy Vydia",
+   "doi": "10.26714/jsm.6.1.2023.26-30",
+   "n": 0,
+   "src": "curated"
+  },
+  {
+   "y": 2022,
+   "t": "Analisis Faktor yang Mempengaruhi Lama Studi Mahasiswa dengan Metode SMARTER",
+   "v": "AITI 19(2)",
+   "k": "jurnal",
+   "c": "dss",
+   "a": "Lenny Margaretta Huizen, Agusta Praba Ristadi Pinem",
+   "doi": "10.24246/aiti.v19i2.213-227",
+   "n": 0,
+   "src": "curated"
+  },
+  {
+   "y": 2022,
+   "t": "Sistem Pendukung Keputusan Pemilihan Bahan Baku Alumunium Menggunakan Metode VIKOR (VIseKriterijumska Kompromisno Rangiranje)",
+   "v": "Jurnal Sistem Informasi 9(1)",
+   "k": "jurnal",
+   "c": "dss",
+   "a": "Agusta Praba Ristadi Pinem, Mega Sekar Sari",
+   "doi": "10.30656/jsii.v9i1.3955",
+   "n": 0,
+   "src": "curated"
+  },
+  {
+   "y": 2022,
+   "t": "Implementasi Sistem Administrasi di Unit Pelaksana Teknis Pusat Pengembangan Publikasi Ilmiah Dosen Universitas Semarang Berbasis Website",
+   "v": "Jurnal Teknologi Informasi dan Ilmu Komputer (JTIIK) 9(3)",
+   "k": "jurnal",
+   "c": "sis",
+   "a": "Muhammad Surya Jati Pradana, B. Very Christioko, Agusta Praba Ristadi Pinem",
+   "doi": "10.25126/jtiik.2021864089",
+   "n": 0,
+   "src": "curated"
+  },
+  {
+   "y": 2022,
+   "t": "Peningkatan Kemampuan Guru-Guru Kelompok Kerja Madrasah (KKM) MA Ma'arif 03 Kabupaten Demak untuk Sertifikasi Microsoft Office Specialist PowerPoint",
+   "v": "Jurnal Surya Masyarakat 5(1)",
+   "k": "pkm",
+   "c": "pkm",
+   "a": "Agusta Praba Ristadi Pinem, Soiful Hadi",
+   "doi": "10.26714/jsm.5.1.2022.43-49",
+   "n": 0,
+   "src": "curated"
+  },
+  {
+   "y": 2022,
+   "t": "Pemanfaatan Platform YouTube sebagai Media Pembelajaran bagi Guru-Guru Kelompok Kerja Madrasah (KKM) MA Ma'arif Kabupaten Demak",
+   "v": "TEMATIK 2(2)",
+   "k": "pkm",
+   "c": "pkm",
+   "a": "Agusta Praba Ristadi Pinem, Lenny Margaretta Huizen",
+   "doi": "10.26623/tmt.v2i2.4679",
+   "n": 0,
+   "src": "curated"
+  },
+  {
+   "y": 2022,
+   "t": "Peningkatan Kemampuan Membuat Desain Promosi Produk pada Usaha Mikro Kecil Menengah (UMKM) Provinsi Jawa Tengah",
+   "v": "TEMATIK 2(2)",
+   "k": "pkm",
+   "c": "pkm",
+   "a": "Saifur Rohman Cholil, Vensy Vydia",
+   "doi": "10.26623/tmt.v2i2.5129",
+   "n": 0,
+   "src": "curated"
+  },
+  {
+   "y": 2021,
+   "t": "The Implementation of Intelligent Systems in Automating Vehicle Detection on the Road",
+   "v": "IAES International Journal of Artificial Intelligence (IJ-AI) 10(3)",
+   "k": "jurnal",
+   "c": "cv",
+   "a": "Susanto, Dimas Dwi Budiarjo, Prind Triajeng Pungkasanti",
+   "url": "https://garuda.kemdiktisaintek.go.id/documents/detail/2157996",
+   "n": 0,
+   "en": 1,
+   "src": "curated"
+  },
+  {
+   "y": 2021,
+   "t": "Prediksi Pandemi COVID-19 Kota Semarang Menggunakan Pendekatan Neural Network",
+   "v": "Jurnal Riptek 15(1)",
+   "k": "jurnal",
+   "c": "ml",
+   "a": "Vensy Vydia, Saifur Rohman Cholil",
+   "doi": "10.35475/riptek.v15i1.113",
+   "n": 1,
+   "src": "curated"
+  },
+  {
+   "y": 2021,
+   "t": "Implementasi Pemilihan Fitur Metode Wrapper dan Embedded dalam Prediksi Ketepatan Kelulusan Mahasiswa",
+   "v": "Seminar Nasional Penelitian dan Pengabdian kepada Masyarakat (SNPPKM) 2021",
+   "k": "prosiding",
+   "c": "ml",
+   "a": "Lenny Margaretta Huizen, Agusta Praba Ristadi Pinem, Dinar Anggit Wicaksana",
+   "url": "https://garuda.kemdiktisaintek.go.id/author/view/491641?page=2",
+   "n": 0,
+   "src": "curated"
+  },
+  {
+   "y": 2021,
+   "t": "Peningkatan Kemampuan Pemanfaatan Sosial Media untuk Promosi Produk di Kelompok Usaha Kelurahan Tambakrejo Semarang",
+   "v": "TEMATIK 1(2)",
+   "k": "pkm",
+   "c": "pkm",
+   "a": "Titin Winarti, Henny Indriyawati",
+   "doi": "10.26623/tmt.v1i2.2627",
+   "n": 0,
+   "src": "curated"
+  },
+  {
+   "y": 2020,
+   "t": "Best Employee Selection in Central Java Using the ELECTRE Method",
+   "v": "Engineering, Information and Agricultural Technology in the Global Digital Revolution (CRC Press)",
+   "k": "buku",
+   "c": "dss",
+   "a": "",
+   "doi": "10.1201/9780429322235-12",
+   "n": 1,
+   "en": 1,
+   "src": "curated"
+  },
+  {
+   "y": 2019,
+   "t": "Penggunaan Model Hidden Markov dan Metode Neural Network sebagai Penerapan Teknologi Pengenalan Wajah",
+   "v": "ScientiCO: Computer Science and Informatics Journal 2(1)",
+   "k": "jurnal",
+   "c": "cv",
+   "a": "Basworo Ardi Pramono, Whisnumurti Adhiwibowo",
+   "doi": "10.22487/j26204118.2019.v2.i1.12173",
+   "n": 0,
+   "src": "curated"
+  },
+  {
+   "y": 2019,
+   "t": "Pemodelan Penentuan Kredit Simpan Pinjam Menggunakan Metode Additive Ratio Assessment (ARAS)",
+   "v": "Jurnal Pengembangan Rekayasa dan Teknologi 3(1)",
+   "k": "jurnal",
+   "c": "dss",
+   "a": "Charis Maulana, Agusta Praba Ristadi Pinem",
+   "doi": "10.26623/jprt.v15i1.1483",
+   "n": 0,
+   "src": "curated"
+  },
+  {
+   "y": 2019,
+   "t": "Peningkatan Sumber Daya Manusia pada Koperasi FPM Jateng Sejahtera untuk Pengelolaan Sistem Informasi Manajemen",
+   "v": "E-Dimas: Jurnal Pengabdian kepada Masyarakat 10(2)",
+   "k": "pkm",
+   "c": "pkm",
+   "a": "Febrian Wahyu Christanto, Agusta Praba Ristadi Pinem",
+   "url": "https://garuda.kemdiktisaintek.go.id/documents/detail/2080240",
+   "n": 0,
+   "src": "curated"
+  },
+  {
+   "y": 2018,
+   "t": "Identification of Picnosis Cells Using Contrast-Limited Adaptive Histogram Equalization (CLAHE) and K-means Algorithm",
+   "v": "2018 1st International Conference on Computer Applications & Information Security (ICCAIS), IEEE",
+   "k": "prosiding",
+   "c": "cv",
+   "a": "",
+   "doi": "10.1109/cais.2018.8441978",
+   "n": 3,
+   "en": 1,
+   "src": "curated"
+  },
+  {
+   "y": 2018,
+   "t": "Raspberry Pi dengan Modul Kamera dan Motion Sensor sebagai Solusi CCTV Lab FTIK Universitas Semarang",
+   "v": "Jurnal Pengembangan Rekayasa dan Teknologi 2(1)",
+   "k": "jurnal",
+   "c": "iot",
+   "a": "Basworo Ardi Pramono, April Firman Daru",
+   "doi": "10.26623/jprt.v14i1.1213",
+   "n": 0,
+   "src": "curated"
+  },
+  {
+   "y": 2016,
+   "t": "Analisa Peningkatan Kualitas Citra Bawah Air Berbasis Koreksi Gamma dan Histogram Equalization",
+   "v": "Jurnal Transformatika 14(1)",
+   "k": "jurnal",
+   "c": "cv",
+   "a": "Pulung Nurtantio Andono, Susanto",
+   "doi": "10.26623/transformatika.v14i1.384",
+   "n": 0,
+   "src": "curated"
+  },
+  {
+   "y": 2016,
+   "t": "Implementasi Klasifikasi Bayesian untuk Strategi Menyerang Jarak Dekat pada NPC (Non Player Character) Menggunakan Unity 3D",
+   "v": "Jurnal Transformatika 13(2)",
+   "k": "jurnal",
+   "c": "ml",
+   "a": "Siti Asmiatun",
+   "doi": "10.26623/transformatika.v13i2.139",
+   "n": 0,
+   "src": "curated"
+  },
+  {
+   "y": 2014,
+   "t": "Analisa Peningkatan Kualitas Citra Bawah Air Berbasis Koreksi Gamma untuk Pencocokan Gambar pada Algoritma SIFT",
+   "v": "Jurnal Transformatika 12(1)",
+   "k": "jurnal",
+   "c": "cv",
+   "a": "",
+   "doi": "10.26623/transformatika.v12i1.89",
+   "n": 0,
+   "src": "curated"
+  }
+ ]
+}
