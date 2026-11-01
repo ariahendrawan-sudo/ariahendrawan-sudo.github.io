@@ -3,6 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self' data:; connect-src 'self'; object-src 'none'; base-uri 'self'; form-action 'none'">
+<meta name="referrer" content="strict-origin-when-cross-origin">
 <title>Aria Hendrawan Expertise</title>
 <meta name="description" content="Profil kepakaran Dr. Aria Hendrawan, S.T., M.Kom. — Artificial Intelligence, Computer Vision, Intelligent Transportation Systems. Fakultas Teknologi Informasi dan Komunikasi, Universitas Semarang.">
 <meta name="author" content="Dr. Aria Hendrawan, S.T., M.Kom.">
@@ -357,11 +359,12 @@ function render(D){
   var research = D.pubs.filter(function(p){return p.k!=="pkm"});
   var pkm = D.pubs.filter(function(p){return p.k==="pkm"});
   function esc(s){return String(s).replace(/[&<>"]/g,function(c){return {"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]})}
-  function link(p){return p.doi?"https://doi.org/"+p.doi:(p.url||"#")}
+  function safe(u){u=String(u||"");return /^https?:\/\//i.test(u)?u:"#"}
+  function link(p){return p.doi?"https://doi.org/"+encodeURI(p.doi):safe(p.url)}
   function el(id){return document.getElementById(id)}
 
   // identifiers
-  el('ids').innerHTML = D.profiles.map(function(p){return '<a href="'+esc(p.url)+'" target="_blank" rel="noopener"><b>'+esc(p.label)+'</b>'+esc(p.id)+'</a>'}).join('');
+  el('ids').innerHTML = D.profiles.map(function(p){return '<a href="'+esc(safe(p.url))+'" target="_blank" rel="noopener"><b>'+esc(p.label)+'</b>'+esc(p.id)+'</a>'}).join('');
 
   // metrics
   var m = D.metrics, S = D.sinta||{}, T = S.table||{}, sco=T["Scopus"]||{}, gs=T["Google Scholar"]||{};
@@ -403,11 +406,11 @@ function render(D){
     if(!list.length){el('ledger').innerHTML='<p class="empty">Tidak ada publikasi yang cocok. Ubah kata kunci atau filter.</p>';return}
     var byY = {}; list.forEach(function(p){(byY[p.y]=byY[p.y]||[]).push(p)});
     el('ledger').innerHTML = Object.keys(byY).sort(function(a,b){return b-a}).map(function(y){
-      return '<div class="yr"><div class="y">'+y+'</div><ol class="pubs">'+byY[y].map(function(p){
+      return '<div class="yr"><div class="y">'+esc(y)+'</div><ol class="pubs">'+byY[y].map(function(p){
         var au = "Aria Hendrawan"+(p.a?", "+p.a:"");
         return '<li class="pub"><div class="t"><a href="'+esc(link(p))+'" target="_blank" rel="noopener">'+esc(p.t)+'</a></div>'+
           '<div class="m">'+esc(au)+' · <i>'+esc(p.v)+'</i></div>'+
-          '<div class="b">'+(p.scopus?'<a class="badge sc" href="'+esc(p.sc||link(p))+'" target="_blank" rel="noopener">Scopus'+(p.q?' '+p.q:'')+'</a>':'')+'<span class="badge type">'+TYPES[p.k]+'</span><span class="badge">'+CL[p.c].n+'</span>'+(p.en?'<span class="badge">EN</span>':'')+(p.n?'<span class="badge cite">'+p.n+' sitasi</span>':'')+(p.doi?'<span class="doi">doi:'+esc(p.doi)+'</span>':'')+'</div></li>';
+          '<div class="b">'+(p.scopus?'<a class="badge sc" href="'+esc(p.sc?safe(p.sc):link(p))+'" target="_blank" rel="noopener">Scopus'+(p.q?' '+esc(p.q):'')+'</a>':'')+'<span class="badge type">'+TYPES[p.k]+'</span><span class="badge">'+CL[p.c].n+'</span>'+(p.en?'<span class="badge">EN</span>':'')+(p.n?'<span class="badge cite">'+esc(p.n)+' sitasi</span>':'')+(p.doi?'<span class="doi">doi:'+esc(p.doi)+'</span>':'')+'</div></li>';
       }).join('')+'</ol></div>';
     }).join('');
   }
@@ -451,7 +454,7 @@ function render(D){
 
   // pkm
   el('pkm').innerHTML = pkm.sort(function(a,b){return b.y-a.y}).map(function(p){
-    return '<article class="pk"><span class="yr2">'+p.y+' · '+esc(p.v)+'</span><div class="t"><a href="'+esc(link(p))+'" target="_blank" rel="noopener">'+esc(p.t)+'</a></div><div class="m">Tim: Aria Hendrawan'+(p.a?", "+esc(p.a):"")+'</div></article>';
+    return '<article class="pk"><span class="yr2">'+esc(p.y)+' · '+esc(p.v)+'</span><div class="t"><a href="'+esc(link(p))+'" target="_blank" rel="noopener">'+esc(p.t)+'</a></div><div class="m">Tim: Aria Hendrawan'+(p.a?", "+esc(p.a):"")+'</div></article>';
   }).join('');
 
   el('pcount').textContent = pkm.length+" artikel";
@@ -461,18 +464,18 @@ function render(D){
     el(cid).textContent = arr.length+" "+unit+" · "+lead+" sebagai ketua";
     el(id).innerHTML = arr.map(function(g){
       var team = g.role==="Ketua" ? (g.members?"Anggota: "+g.members:"Pelaksana tunggal") : "Ketua: "+g.lead+(g.members?" · Anggota: "+g.members:"");
-      return '<li class="g"><div class="gy">'+g.y+'</div><div style="min-width:0"><div class="gt">'+esc(g.t)+'</div><div class="gm">'+esc(g.scheme)+' · '+esc(g.funder)+'</div><div class="gm">'+esc(team)+'</div></div><span class="role'+(g.role==="Ketua"?' lead':'')+'">'+esc(g.role)+'</span></li>';
+      return '<li class="g"><div class="gy">'+esc(g.y)+'</div><div style="min-width:0"><div class="gt">'+esc(g.t)+'</div><div class="gm">'+esc(g.scheme)+' · '+esc(g.funder)+'</div><div class="gm">'+esc(team)+'</div></div><span class="role'+(g.role==="Ketua"?' lead':'')+'">'+esc(g.role)+'</span></li>';
     }).join('');
   }
   glist('grants',D.grants,'gcount','hibah');
   glist('services',D.services,'scount','hibah');
   el('books').innerHTML=(D.books||[]).slice().sort(function(a,b){return b.y-a.y}).map(function(b){
-    return '<li><span class="t">'+esc(b.t)+'</span><span class="m">'+esc(b.authors)+'</span><span class="m">'+b.y+' · '+esc(b.pub)+' · '+esc(b.cat)+'</span><span class="id">ISBN '+esc(b.isbn)+'</span></li>'}).join('');
+    return '<li><span class="t">'+esc(b.t)+'</span><span class="m">'+esc(b.authors)+'</span><span class="m">'+esc(b.y)+' · '+esc(b.pub)+' · '+esc(b.cat)+'</span><span class="id">ISBN '+esc(b.isbn)+'</span></li>'}).join('');
   el('iprs').innerHTML=(D.iprs||[]).slice().sort(function(a,b){return b.y-a.y}).map(function(r){
-    return '<li><span class="t">'+esc(r.t)+'</span><span class="m">'+esc(r.inventors)+'</span><span class="id">'+r.y+' · '+esc(r.cat)+' · '+esc(r.no)+'</span></li>'}).join('');
+    return '<li><span class="t">'+esc(r.t)+'</span><span class="m">'+esc(r.inventors)+'</span><span class="id">'+esc(r.y)+' · '+esc(r.cat)+' · '+esc(r.no)+'</span></li>'}).join('');
 
   // contact
-  el('links').innerHTML = D.profiles.map(function(p){return '<li><span>'+esc(p.label)+'</span><a href="'+esc(p.url)+'" target="_blank" rel="noopener">'+esc(p.id)+'</a></li>'}).join('')+
+  el('links').innerHTML = D.profiles.map(function(p){return '<li><span>'+esc(p.label)+'</span><a href="'+esc(safe(p.url))+'" target="_blank" rel="noopener">'+esc(p.id)+'</a></li>'}).join('')+
     '<li><span>Institusi</span><a href="https://ftik.usm.ac.id" target="_blank" rel="noopener">FTIK Universitas Semarang</a></li>';
   el('copy').addEventListener('click',function(){
     var b=this, t=el('mail').textContent;
