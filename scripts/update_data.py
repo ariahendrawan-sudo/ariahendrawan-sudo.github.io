@@ -36,7 +36,12 @@ DATA = ROOT / "data.json"
 UA = f"ariahendrawan-site-updater/1.0 (mailto:{MAILTO})"
 
 PKM_VENUES = ("surya masyarakat", "dimastik", "tematik", "e-dimas", "pengabdian",
-              "abdimas", "community service", "dedikasi", "pemberdayaan")
+              "abdimas", "community service", "dedikasi", "pemberdayaan", "sustainable communities",
+              "community engagement", "community development")
+SKIP_TYPES = {"dataset", "preprint", "posted-content", "peer-review", "paratext", "component",
+              "erratum", "editorial", "letter", "other", "report", "standard", "grant"}
+SKIP_VENUES = ("zenodo", "mendeley data", "figshare", "osf preprints", "arxiv", "ina-rxiv",
+               "researchgate", "dryad")
 PKM_TITLE = ("pelatihan", "pemberdayaan", "peningkatan kemampuan", "peningkatan kapasitas",
              "peningkatan penggunaan", "peningkatan sumber daya", "pendampingan",
              "sosialisasi", "bagi guru", "pada siswa", "umkm rw", "masyarakat desa")
@@ -44,7 +49,9 @@ PKM_TITLE = ("pelatihan", "pemberdayaan", "peningkatan kemampuan", "peningkatan 
 RULES = [  # urutan penting: aturan pertama yang cocok dipakai
     ("its", ("traffic", "lalu lintas", "transport", "mobility", "mobilitas", "passenger",
              "penumpang", "road-vehicle", "metr-la", "spatiotemporal", "terminal")),
-    ("cv", ("detection", "deteksi objek", "vehicle detection", "image", "citra", "vision",
+    ("iot", ("iot", "internet of things", "wireless sensor", "wsn", "nodemcu", "arduino",
+             "raspberry", "gas leak", "smart door", "smart curtain", "intrusion")),
+    ("cv", ("object detection", "deteksi objek", "vehicle detection", "face detection", "image", "citra", "vision",
             "yolo", "face", "wajah", "cnn-based detection", "detr", "r-cnn", "tracking",
             "clahe", "segmentation", "segmentasi", "picnosis", "underwater", "bawah air")),
     ("nlp", ("sentimen", "sentiment", "text", "teks", "klasifikasi pertanyaan", "nlp",
@@ -194,6 +201,7 @@ def main():
     by_doi = {norm_doi(p.get("doi")): p for p in pubs if p.get("doi")}
     by_title = {norm_title(p["t"]): p for p in pubs}
     report, changed, failures = [], False, []
+    status = {"sources": {}}
 
     # 1) metrik penulis
     try:
@@ -223,13 +231,19 @@ def main():
     candidates = []
     for name, fn in (("OpenAlex works", openalex_works), ("Crossref", crossref_works)):
         try:
-            candidates.extend(fn())
+            got = fn()
+            status["sources"][name] = len(got)
+            candidates.extend(got)
         except Exception as e:  # noqa: BLE001
             failures.append(f"{name}: {e}")
 
     excluded = {norm_title(t) for t in data.get("exclude", [])}
     for w in candidates:
         if not w["t"] or not w["y"]:
+            continue
+        if (w.get("type") or "").lower() in SKIP_TYPES or any(v in (w["v"] or "").lower() for v in SKIP_VENUES):
+            continue
+        if (w["v"] or "-") == "-" and not w["doi"]:
             continue
         if similar(w["t"], excluded):
             continue
@@ -268,6 +282,9 @@ def main():
         try:
             import sinta  # noqa: PLC0415
             s = sinta.fetch(sinta_id)
+            status["sources"]["sinta"] = {"profile_fields": sorted((s.get("profile") or {}).keys()),
+                                         **{k: len(s.get(k, [])) for k in ("grants", "services", "iprs", "books", "scopus")},
+                                         "errors": s.get("errors", [])}
             for e in s.get("errors", []):
                 failures.append(f"SINTA {e}")
             prof = s.get("profile") or {}
@@ -335,6 +352,11 @@ def main():
         data["updated"] = datetime.now(wib).strftime("%Y-%m-%d")
         DATA.write_text(json.dumps(data, ensure_ascii=False, indent=1) + "\n", encoding="utf-8")
 
+    wib = timezone(timedelta(hours=7))
+    status["run"] = datetime.now(wib).isoformat(timespec="minutes")
+    status["changes"] = report
+    status["warnings"] = failures
+    (ROOT / "status.json").write_text(json.dumps(status, ensure_ascii=False, indent=1) + "\n", encoding="utf-8")
     print("\n".join(report) if report else "Tidak ada karya atau metrik baru.")
     for f in failures:
         print("PERINGATAN:", f, file=sys.stderr)

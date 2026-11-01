@@ -145,18 +145,6 @@
   },
   {
    "y": 2026,
-   "t": "CocoaCut-Edge pilot study: analysis notebook and derived result tables",
-   "v": "Zenodo (CERN European Organization for Nuclear Research)",
-   "k": "jurnal",
-   "c": "ml",
-   "a": "Daniyal Faridudin Nayf, Bagus Nugroho",
-   "n": 0,
-   "src": "auto",
-   "doi": "10.5281/zenodo.23782054",
-   "en": 1
-  },
-  {
-   "y": 2026,
    "t": "Data-Driven Traffic for Infrastructure Planning: An LSTM Approach Using Indonesian Road-Vehicle Trends",
    "v": "Journal of Information Systems and Informatics 8(2)",
    "k": "jurnal",
@@ -235,18 +223,6 @@
    "src": "curated"
   },
   {
-   "y": 2026,
-   "t": "Screening data and code for a systematic review of technological tools in rice farming (2016–2026)",
-   "v": "Mendeley Data",
-   "k": "jurnal",
-   "c": "ml",
-   "a": "April Firman Daru",
-   "n": 0,
-   "src": "auto",
-   "doi": "10.17632/87kd7rwrj2",
-   "en": 1
-  },
-  {
    "y": 2025,
    "t": "A Hybrid Image Processing Approach for Real-Time Face Recognition in Attendance Monitoring",
    "v": "International Journal of Artificial Intelligence and Science 2(1)",
@@ -297,8 +273,8 @@
    "y": 2025,
    "t": "Enhancing Food Safety Awareness through Digital Education on Preservative Use among MSMEs: A Case of Srikandi Cipta Bahari Semarang",
    "v": "Journal of Sustainable Communities and Development 3(2)",
-   "k": "jurnal",
-   "c": "ml",
+   "k": "pkm",
+   "c": "pkm",
    "a": "Sri Budi Wahjuningsih, Mita Nurul Azkia, Vensy Vydia",
    "n": 0,
    "src": "auto",
@@ -606,34 +582,12 @@
    "t": "Intrusion Detection with Wireless Sensor Network (WSN) Internet of Things",
    "v": "Journal of Telecommunication Electronic and Computer Engineering (JTEC) 13(2)",
    "k": "jurnal",
-   "c": "cv",
+   "c": "iot",
    "a": "April Firman Daru, Alauddin Maulana Hirzan",
    "n": 0,
    "src": "auto",
    "doi": "10.54554/jtec.2021.13.02.007",
    "en": 1
-  },
-  {
-   "y": 2021,
-   "t": "METODE K-MEAN DALAM PENGELOMPOKKAN ARTIKEL BERBAHASA INDONESIA",
-   "v": "-",
-   "k": "jurnal",
-   "c": "ml",
-   "a": "Henny Indriyawati, Basworo Ardi",
-   "n": 0,
-   "src": "auto",
-   "url": "https://repository.pustakalearningcenter.com/media/347244-metode-k-mean-dalam-pengelompokkan-artik-91332b47.pdf"
-  },
-  {
-   "y": 2021,
-   "t": "Metode Stemming dalam Penerapan Artikel Berbahasa Indonesia",
-   "v": "-",
-   "k": "jurnal",
-   "c": "ml",
-   "a": "Titin Winarti, Henny Indriyawati",
-   "n": 1,
-   "src": "auto",
-   "url": "https://repository.pustakalearningcenter.com/media/347245-metode-stemming-dalam-penerapan-artikel-57331884.pdf"
   },
   {
    "y": 2021,
@@ -701,7 +655,7 @@
    "t": "Designing a portable LPG gas leak detection and fire protection device",
    "v": "CRC Press eBooks",
    "k": "buku",
-   "c": "cv",
+   "c": "iot",
    "a": "Susanto Susanto, Aditya Wisnu Pradipta, Quanjin Ma",
    "n": 1,
    "src": "auto",
@@ -713,7 +667,7 @@
    "t": "Designing automatic system smart curtains using NodeMCU based on android",
    "v": "CRC Press eBooks",
    "k": "buku",
-   "c": "ml",
+   "c": "iot",
    "a": "Atmoko Nugroho, Agusta Praba Ristadi Pinem, Saifur Rohman Cholil, Nur Hidayanti",
    "n": 2,
    "src": "auto",
@@ -800,18 +754,6 @@
    "doi": "10.26623/jprt.v14i1.1213",
    "n": 5,
    "src": "curated"
-  },
-  {
-   "y": 2017,
-   "t": "INA-Rxiv: The Missing Puzzle in Indonesia’s Scientific Publishing Workflow",
-   "v": "-",
-   "k": "jurnal",
-   "c": "ml",
-   "a": "Robbi Rahim, Dasapta Erwin Irawan, Nuning Kurniasih, Ansari Saleh Ahmar, Ratnadewi Ratnadewi, Darmawan Napitupulu, Andysah Putera Utama Siahaan, Mesran Mesran, Juneman Abraham, Juneman Abraham, Janner Simarmata, Tri Listyorini, Ricardo Freedom Nanuru, Dian Eka Indriani, yettiarwendi, Ankardiansyah Pandu Pradana, Indriyani Indriyani, Elfrida Gultom, Nanik Setyowati, Hardianto Djanggih, Abdurrozzaq Hasibuan, Laurensius Arliman S, Hamzah Eteruddin, Dian Utami Sutiksno, Leon Andretti Abdillah, Indrya Mulyaningsih",
-   "n": 0,
-   "src": "auto",
-   "doi": "10.31227/osf.io/bxkuf",
-   "en": 1
   },
   {
    "y": 2016,
@@ -1217,6 +1159,11 @@
  ],
  "exclude": [
   "Student Perception of Student Centered e-Learning Environment (SCeLE) as Media to Support Teaching and Learning Activities at the University of Indonesia",
-  "Support vector machine for omega 3 classification based on histogram equalization"
+  "Support vector machine for omega 3 classification based on histogram equalization",
+  "CocoaCut-Edge pilot study: analysis notebook and derived result tables",
+  "Screening data and code for a systematic review of technological tools in rice farming (2016–2026)",
+  "METODE K-MEAN DALAM PENGELOMPOKKAN ARTIKEL BERBAHASA INDONESIA",
+  "Metode Stemming dalam Penerapan Artikel Berbahasa Indonesia",
+  "INA-Rxiv: The Missing Puzzle in Indonesia’s Scientific Publishing Workflow"
  ]
 }
