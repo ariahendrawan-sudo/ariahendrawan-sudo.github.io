@@ -19,8 +19,11 @@
    ]
   }
  },
- "run": "2026-11-02T08:29+07:00",
- "changes": [],
+ "run": "2026-11-09T08:42+07:00",
+ "changes": [
+  "Metrik: {'works': 62, 'citations': 73, 'h_index': 4, 'i10_index': 2, 'source': 'OpenAlex'} -> {'works': 62, 'citations': 115, 'h_index': 5, 'i10_index': 2, 'source': 'OpenAlex'}",
+  "+ [2026] REGULATORY ARCHITECTURE, INSTITUTIONAL GOVERNANCE AND TECHNOLOGICAL ADOPTION IN FINANCIAL FRAUD PREVENTION: A SYSTEMATIC LITERATURE REVIEW WITH IMPLICATIONS FOR EMERGING ECONOMICS (jurnal/ml)"
+ ],
  "warnings": [
   "SINTA profil: HTTP Error 403: Forbidden",
   "SINTA researches: HTTP Error 403: Forbidden",

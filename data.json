@@ -1,9 +1,9 @@
 {
- "updated": "2026-11-01",
+ "updated": "2026-11-09",
  "metrics": {
   "works": 62,
-  "citations": 73,
-  "h_index": 4,
+  "citations": 115,
+  "h_index": 5,
   "i10_index": 2,
   "source": "OpenAlex"
  },
@@ -20,7 +20,7 @@
   ],
   [
    2017,
-   1,
+   0,
    1
   ],
   [
@@ -41,7 +41,7 @@
   [
    2021,
    7,
-   8
+   9
   ],
   [
    2022,
@@ -51,22 +51,22 @@
   [
    2023,
    3,
-   19
+   20
   ],
   [
    2024,
    6,
-   13
+   25
   ],
   [
    2025,
    10,
-   5
+   17
   ],
   [
    2026,
-   13,
-   9
+   14,
+   25
   ]
  ],
  "profiles": [
@@ -117,7 +117,7 @@
    "c": "nlp",
    "a": "Rizky Haryanto Putro",
    "doi": "10.70404/ketik.v3i03.626",
-   "n": 0,
+   "n": 1,
    "src": "curated"
   },
   {
@@ -151,7 +151,7 @@
    "c": "its",
    "a": "Nabilah Putri",
    "doi": "10.63158/journalisi.v8i2.1516",
-   "n": 0,
+   "n": 1,
    "en": 1,
    "src": "curated"
   },
@@ -221,6 +221,18 @@
    "n": 0,
    "en": 1,
    "src": "curated"
+  },
+  {
+   "y": 2026,
+   "t": "REGULATORY ARCHITECTURE, INSTITUTIONAL GOVERNANCE AND TECHNOLOGICAL ADOPTION IN FINANCIAL FRAUD PREVENTION: A SYSTEMATIC LITERATURE REVIEW WITH IMPLICATIONS FOR EMERGING ECONOMICS",
+   "v": "Jurnal Akuntansi Dan Bisnis Indonesia (JABISI)",
+   "k": "jurnal",
+   "c": "ml",
+   "a": "Ardiani Ika Sulistyawati, Aprih Santoso, Aristo Kevin Ardyaneira Pratama",
+   "n": 0,
+   "src": "auto",
+   "doi": "10.55122/jabisi.v7i2.2380",
+   "en": 1
   },
   {
    "y": 2025,
@@ -301,7 +313,7 @@
    "c": "nlp",
    "a": "Alwan Adiuntoro",
    "doi": "10.30591/jpit.v10i2.7965",
-   "n": 0,
+   "n": 1,
    "src": "curated"
   },
   {
@@ -324,7 +336,7 @@
    "c": "pkm",
    "a": "Lenny Margaretta Huizen, Vensy Vydia",
    "doi": "10.26623/dimastik.v3i1.11370",
-   "n": 3,
+   "n": 4,
    "src": "curated"
   },
   {
@@ -347,7 +359,7 @@
    "c": "pkm",
    "a": "Vensy Vydia, Lenny Margaretta Huizen, Saifur Rohman Cholil",
    "doi": "10.26623/dimastik.v3i2.12640",
-   "n": 0,
+   "n": 1,
    "src": "curated"
   },
   {
@@ -397,7 +409,7 @@
    "c": "pkm",
    "a": "Vensy Vydia, Lenny Margaretta Huizen",
    "doi": "10.26623/dimastik.v2i1.8204",
-   "n": 0,
+   "n": 3,
    "src": "curated"
   },
   {
@@ -419,7 +431,7 @@
    "c": "dss",
    "a": "Agusta Praba Ristadi Pinem, Nur Wakhidah",
    "doi": "10.20895/infotel.v16i4.1099",
-   "n": 1,
+   "n": 4,
    "en": 1,
    "src": "curated"
   },
@@ -431,7 +443,7 @@
    "c": "cv",
    "a": "Luqman Hakim, Rofiatul Khoiriyah",
    "doi": "10.63158/ijais.v1.i1.5",
-   "n": 1,
+   "n": 3,
    "en": 1,
    "src": "curated"
   },
@@ -443,7 +455,7 @@
    "c": "cv",
    "a": "Rofiatul Khoiriyah",
    "doi": "10.63158/ijais.v1.i1.4",
-   "n": 1,
+   "n": 2,
    "en": 1,
    "src": "curated"
   },
@@ -483,7 +495,7 @@
    "c": "pkm",
    "a": "Khoirudin, Vensy Vydia",
    "doi": "10.26714/jsm.6.1.2023.26-30",
-   "n": 0,
+   "n": 1,
    "src": "curated"
   },
   {
@@ -505,7 +517,7 @@
    "c": "sis",
    "a": "Muhammad Surya Jati Pradana, B. Very Christioko, Agusta Praba Ristadi Pinem",
    "doi": "10.25126/jtiik.2021864089",
-   "n": 2,
+   "n": 5,
    "src": "curated"
   },
   {
@@ -517,7 +529,7 @@
    "a": "",
    "url": "https://www.scopus.com/record/display.uri?eid=2-s2.0-85146702217",
    "sc": "https://www.scopus.com/record/display.uri?eid=2-s2.0-85146702217",
-   "n": 16,
+   "n": 17,
    "en": 1,
    "scopus": 1,
    "src": "sinta"
@@ -530,7 +542,7 @@
    "c": "pkm",
    "a": "Agusta Praba Ristadi Pinem, Lenny Margaretta Huizen",
    "doi": "10.26623/tmt.v2i2.4679",
-   "n": 1,
+   "n": 7,
    "src": "curated"
   },
   {
@@ -541,7 +553,7 @@
    "c": "pkm",
    "a": "Agusta Praba Ristadi Pinem, Soiful Hadi",
    "doi": "10.26714/jsm.5.1.2022.43-49",
-   "n": 1,
+   "n": 2,
    "src": "curated"
   },
   {
@@ -552,7 +564,7 @@
    "c": "pkm",
    "a": "Saifur Rohman Cholil, Vensy Vydia",
    "doi": "10.26623/tmt.v2i2.5129",
-   "n": 0,
+   "n": 1,
    "src": "curated"
   },
   {
@@ -619,7 +631,7 @@
    "c": "cv",
    "a": "Susanto, Dimas Dwi Budiarjo, Prind Triajeng Pungkasanti",
    "url": "https://garuda.kemdiktisaintek.go.id/documents/detail/2157996",
-   "n": 4,
+   "n": 5,
    "en": 1,
    "src": "curated",
    "scopus": 1,
@@ -705,7 +717,7 @@
    "c": "dss",
    "a": "Charis Maulana, Agusta Praba Ristadi Pinem",
    "doi": "10.26623/jprt.v15i1.1483",
-   "n": 14,
+   "n": 22,
    "src": "curated"
   },
   {
@@ -727,7 +739,7 @@
    "c": "pkm",
    "a": "Febrian Wahyu Christanto, Agusta Praba Ristadi Pinem",
    "url": "https://garuda.kemdiktisaintek.go.id/documents/detail/2080240",
-   "n": 1,
+   "n": 2,
    "src": "curated"
   },
   {
@@ -752,7 +764,7 @@
    "c": "iot",
    "a": "Basworo Ardi Pramono, April Firman Daru",
    "doi": "10.26623/jprt.v14i1.1213",
-   "n": 5,
+   "n": 7,
    "src": "curated"
   },
   {
